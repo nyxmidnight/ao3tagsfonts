@@ -21,10 +21,10 @@ Use in a user style manager like [Stylus](https://github.com/openstyles/stylus).
 Please feel free to open an issue on this repo and I'll look into it.
 
 ## Roadmap
-[] Convert to UserCSS format for easy installation with the Stylus browser extension.
-[] Add user customizable variables.
-[] Fix spacing issues with icon labels.
-[x] Fix overlapping text issues in Series headings. :sparkles:
+- [] Convert to UserCSS format for easy installation with the Stylus browser extension.
+- [] Add user customizable variables.
+- [] Fix spacing issues with icon labels.
+- [x] Fix overlapping text issues in Series headings. :sparkles:
 
 ## Contributing
 Feel free to use it, modify it, fork it at your leisure.
