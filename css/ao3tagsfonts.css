@@ -226,7 +226,8 @@
   }
 
   .blurb.work .heading,
-  .blurb.bookmark .heading
+  .blurb.bookmark .heading,
+  .blurb.series .heading
   {
     margin-left: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px) !important;
   }

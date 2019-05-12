@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Corrected overlapping labels in work headers under the Series section.
 
+## [1.1.0] 2019-02-13
+### Changed
+- Corrected overlapping labels in work headers under the Series section.
+
 ## [1.0.0] - 2019-02-13
 ### Added
 - As the stylesheet is usable as-is, the original version is being published with this release.
