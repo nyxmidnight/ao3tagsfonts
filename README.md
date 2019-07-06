@@ -1,4 +1,6 @@
 # Better AO3 Tags and Fonts
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/nyxmidnight/ao3tagsfonts.svg) ![GitHub](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts.svg) ![GitHub Release Date](https://img.shields.io/github/release-date/nyxmidnight/ao3tagsfonts.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Twitter](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+
 **Better AO3 Tags and Fonts** contains various readability and usability improvements for ArchiveOfOurOwn.org.
 
 ## Features
@@ -31,9 +33,6 @@ Feel free to use it, modify it, fork it at your leisure.
 
 ## Acknowledgements
 Based on the public domain work of [Athari](https://userstyles.org/styles/152660/archiveofourown-org-fonts-tags-ath).
-
-## Licence
-As the original user stylesheet was released in the public domain, this project is released into the public domain as well.
 
 ## Project Status
 Tinkering with it!
