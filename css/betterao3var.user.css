@@ -11,10 +11,10 @@
 
 /* @var <type> <name>   <label>        <default value> */
 
-@var select ui-font "Site interface font" ["system-ui", "Segoe UI*", "Arial", "Helvetica Neue", "Lato", "Noto Sans", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
-@var select summary-font "Work summary font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
-@var select story-font "Story body font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
-@var select article-font "News and docs font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select ui-font "Site interface font" ["system-ui", "Segoe UI*", "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select summary-font "Work summary font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select story-font "Story body font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select article-font "News and docs font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
 ==/UserStyle== */
 
 @-moz-document domain("archiveofourown.org") {
