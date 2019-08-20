@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Better AO3 Tags and Fonts
+@namespace      github.com/nyxmidnight
+@version        2.0.0
+@description    Readability and usability improvements for ArchiveOfOurOwn.org
+@author         Nyx Midnight (http://nyx.zone)
+@license		    Unlicense
+@homepageURL	  https://github.com/nyxmidnight/ao3tagsfonts
+@supportURL		  https://github.com/nyxmidnight/ao3tagsfonts/issues
+@preprocessor	  default
+==/UserStyle== */
+
+@-moz-document domain("archiveofourown.org") {
+  
+}
