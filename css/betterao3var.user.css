@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Better AO3 Tags and Fonts
-@namespace      github.com/nyxmidnight
+@namespace   github.com/nyxmidnight
 @version        2.0.0
 @description    Readability and usability improvements for ArchiveOfOurOwn.org
 @author         Nyx Midnight (http://nyx.zone)
@@ -8,8 +8,99 @@
 @homepageURL	  https://github.com/nyxmidnight/ao3tagsfonts
 @supportURL		  https://github.com/nyxmidnight/ao3tagsfonts/issues
 @preprocessor	  default
+
+/* @var <type> <name>   <label>        <default value> */
+@var  select  ui-font   "UI font"        ["system-ui", "Segoe UI*", "Roboto", "Helvetica Neue", "Ubuntu", "Verdana", "sans-serif"]
+@var  select  summary-font   "Summary font"        ["system-ui", "Segoe UI*", "Roboto", "Helvetica Neue", "Ubuntu", "Verdana", "sans-serif"]
 ==/UserStyle== */
 
 @-moz-document domain("archiveofourown.org") {
-  
+  /* Dark theme compatibility to work with https://github.com/cicerakes/DarkNight-AO3 */
+  /*:root {
+    --ath-override-theme: "dark";
+    --ath-override-box-border-color: #444;
+    --ath-override-box-shadow-color: transparent;
+    --ath-override-interface-font-color: #ccc;
+    --ath-override-required-tag-font-color: #ccc;
+    --ath-override-gray-text-color: #777;
+    --ath-override-tag-font-color: #eee;
+    --ath-override-tag-default-light: 25%;
+    --ath-override-tag-default-border-light: 15%;
+    --ath-override-tag-highlight-light: 45%;
+    --ath-override-tag-highlight-border-light: 25%;
+    --ath-override-tag-freeform-light: 35%;
+  }*/
+
+  :root
+  {
+    /* Light theme */
+    --box-border-color: var(--ath-override-box-border-color, #bbb);
+    --box-shadow-color: var(--ath-override-box-shadow-color, rgba(0, 0, 8, 0.2));
+    /* Fonts */
+    /* Interface: generic body font */
+    --interface-font-size: 14px;
+    --interface-font-color: var(--ath-override-interface-font-color, #222);
+    /* Summary: Summary and notes on work page */
+    --summary-font-family: Verdana, sans-serif;
+    --summary-font-size: 14px;
+    --summary-title-font-size: 16px;
+    /* Story: Fanfiction body text */
+    --story-font-family: Verdana, sans-serif;
+    --story-font-size: 16px;
+    --story-width: 45em;
+    /* Article: News, documentation and FAQ, admin area */
+    --article-font-family: Verdana, sans-serif;
+    --article-font-size: 14px;
+    --article-width: 65em;
+    /* Required Tags: the 4 squares */
+    --required-tag-font-size: 10px;
+    --required-tag-font-color: var(--ath-override-required-tag-font-color, #000);
+    --required-tag-width: 80px;
+    --required-tag-icon-width: 25px;
+    /* Tag: work tags */
+    --tag-font-size: 13px;
+    --tag-width: 28em;
+    /* idk */
+    --gray-text-color: #888;
+  }
+
+  /* Fonts */
+.dropdown,
+.dynamic form,
+.secondary,
+.toggled form,
+body {
+  font : var(--interface-font-size) var(--ui-font) !important;
+  color: var(--interface-font-color) !important;
 }
+
+blockquote,
+pre {
+  font: var(--summary-font-size) var(--summary-font) !important;
+}
+
+#main {
+  font-size: inherit !important;
+}
+
+.admin,
+.docs,
+.news {
+  font     : var(--article-font-size) var(--article-font-family) !important;
+  max-width: var(--article-width);
+}
+
+#workskin {
+  font     : var(--story-font-size) var(--story-font-family) !important;
+  max-width: var(--story-width);
+}
+
+#workskin * {
+  font-family: inherit !important;
+}
+
+form p.footnote {
+  line-height: 1.5 !important;
+}
+
+  }
