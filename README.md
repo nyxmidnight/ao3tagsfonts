@@ -7,7 +7,7 @@
 ## Features
 
 -   Tags coloured by category
-    -   **Red:** Archive's content warnings (Graphic depiction of violence, Major character death, Rape/non-con, Underage, or None, or Chose Not To Warn)
+    -   **Red:** Archive's content warnings (Graphic depiction of violence, Major character death, Rape/non-con, Underage, or None, or Choose Not To Use Archive Warnings)
     -   **Cyan:** Relationships
     -   **Yellow:** Characters
     -   **Grey:** Other information
@@ -16,7 +16,7 @@
     -   **Text:** Verdana
 -   Better default text width for readability
     -   **Width:** 45 em
--   Visible labels for mandatory tag icons for readability and ease of understanding
+-   Visible labels for mandatory tag icons (Content rating; Relationships, pairings, orientations; Content warnings; Is the work finished or the prompt fulfilled?) for readability and ease of understanding
 
 ## Installation
 
@@ -28,7 +28,7 @@ Please feel free to open an issue on this repo and I'll look into it.
 
 ## Roadmap
 
--   [ ] Convert to UserCSS format for easy installation with the Stylus browser extension.
+-   [x] Convert to UserCSS format for easy installation with the Stylus browser extension.
 -   [ ] Add user customizable variables.
 -   [ ] Fix spacing issues with icon labels.
 -   [x] Fix overlapping text issues in Series headings. :sparkles:
