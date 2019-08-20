@@ -7,7 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
--   Converting to UserCSS.
+## [2.0.0] 2019-08-20
+
+### Added
+
+-   User can now select fonts to use on the site from a dropdown list for the interface, the summary of works, the body font of works, and the body font of the news and the documentation sections of the site.
+
+### Changed
+
+-   Converted from CSS format to UserCSS format for better compatibility with Stylus and user-defined variables going forward.
+
+### Deprecated
+
+-   The plain CSS version will no longer be updated.
+
+### Fixed
+
+-   A contrast/accessibility issue in the footer of works Marked For Later on the front page is now fixed.
 
 ## [1.1.0] 2019-02-13
 
