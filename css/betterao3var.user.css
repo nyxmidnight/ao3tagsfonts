@@ -122,6 +122,14 @@ pre {
 form p.footnote {
   line-height: 1.5 !important;
 }
+
+/* FIX: Last Viewed footer of Marked For Later works on the index page */
+
+.reading h4.viewed {
+  background-color: #bbb !important;
+  color: #222;
+}
+
 /* Alphabet: proper columns */
 .alphabet .listbox .index {
   columns: calc(var(--tag-width) + 40px);
@@ -133,8 +141,8 @@ form p.footnote {
   width  : auto !important;
   margin : 0 !important;
 }
-/* Work block: border */
 
+/* Work block: border */
 .blurb {
   padding      : 5px 10px !important;
   border       : solid 1px var(--box-border-color) !important;
@@ -151,7 +159,6 @@ form p.footnote {
   display   : inline-block;
 }
 /* Work block: hide accessibility labels */
-
 .blurb .landmark {
   display: none !important;
 }
