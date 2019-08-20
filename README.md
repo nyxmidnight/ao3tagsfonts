@@ -32,7 +32,7 @@ Furthermore, the font selected in the stylesheet configuration menu will **only*
 
 To install, with a userstyle manager that supports installing UserCSS stylesheets, open the raw file within the browser.
 
-:package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/twitter-detox/master/twitter-detox.user.css)
+:package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
 
 ## Built With
 
