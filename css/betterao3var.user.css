@@ -38,6 +38,7 @@
     --box-border-color       : var(--ath-override-box-border-color, #bbb);
     --box-shadow-color       : var(--ath-override-box-shadow-color, rgba(0, 0, 8, 0.2));
     /* Fonts */
+    --normal-font-weight: 400;
     /* Interface: generic body font */
     --interface-font-size    : 14px;
     --interface-font-color   : var(--ath-override-interface-font-color, #222);
@@ -65,34 +66,42 @@
     --gray-text-color        : #888;
   }
   /* Fonts */
-
   .dropdown,
   .dynamic form,
   .secondary,
   .toggled form,
   body {
-    font : var(--interface-font-size) var(--ui-font) !important;
+    font-family: var(--ui-font) !important;
+    font-size : var(--interface-font-size) !important;
+    font-weight: var(--normal-font-weight);
     color: var(--interface-font-color) !important;
   }
 
   blockquote,
   pre {
-    font: var(--summary-font-size) var(--summary-font) !important;
+    font-family: var(--summary-font) !important;
+    font-size: var(--summary-font-size) !important;
+    font-weight: var(--normal-font-weight);
   }
 
   #main {
     font-size: inherit !important;
   }
 
-  .admin,
-  .docs,
-  .news {
-    font     : var(--article-font-size) var(--article-font) !important;
-    max-width: var(--article-width);
-  }
+.admin,
+.docs,
+.news {
+  font-size  : var(--article-font-size) !important;
+  font-family: var(--article-font) !important;
+  font-weight: var(--normal-font-weight);
+  max-width  : var(--article-width);
+}
+
 
   #workskin {
-    font     : var(--story-font-size) var(--story-font) !important;
+    font-size: var(--story-font-size) !important;
+    font-family: var(--story-font) !important;
+    font-weight: var(--normal-font-weight);
     max-width: var(--story-width);
   }
 
@@ -102,5 +111,19 @@
 
   form p.footnote {
     line-height: 1.5 !important;
+  }
+
+  /* Alphabet: proper columns */
+  .alphabet .listbox .index
+  {
+    columns: calc(var(--tag-width) + 40px);
+  }
+
+  .alphabet .listbox .index li
+  {
+    display: block !important;
+    float: none !important;
+    width: auto !important;
+    margin: 0 !important;
   }
 }
