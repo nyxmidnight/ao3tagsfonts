@@ -61,18 +61,18 @@
     /* Tags */
     --tag-font-color            : var(--ath-override-tag-font-color, #000);
     /* Colours in HSL format */
-    --tag-default-hue           : 0;
-    --tag-default-sat           : 40%;
-    --tag-default-light         : var(--ath-override-tag-default-light, 85%);
-    --tag-default-border-light  : var(--ath-override-tag-default-border-light, 70%);
-    --tag-highlight-sat         : 50%;
-    --tag-highlight-light       : var(--ath-override-tag-highlight-light, 75%);
-    --tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
-    --tag-freeform-sat          : 0;
-    --tag-freeform-light        : var(--ath-override-tag-freeform-light, 92%);
-    --tag-warning-hue           : 0;
-    --tag-relationship-hue      : 180;
-    --tag-character-hue         : 60;
+    --tag-default-hue: 0;
+		--tag-default-sat: 40%;
+		--tag-default-light: var(--ath-override-tag-default-light, 85%);
+		--tag-default-border-light: var(--ath-override-tag-default-border-light, 70%);
+		--tag-highlight-sat: 50%;
+		--tag-highlight-light: var(--ath-override-tag-highlight-light, 75%);
+		--tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
+		--tag-freeform-sat: 0%;
+		--tag-freeform-light: var(--ath-override-tag-freeform-light, 92%);
+		--tag-warning-hue: 0;
+		--tag-relationship-hue: 180;
+		--tag-character-hue: 60;
   }
   /* Fonts */
 
@@ -345,75 +345,72 @@
   }
 
   .warning,
-  .warnings {
+  .warnings,
+  .warnings strong {
     font-weight: normal;
   }
-
-    .warnings strong {
-      font-weight: bold;
-    }
 
   .tags li::after {
     content: unset !important;
   }
-  /* Tags: colored rounded rectangles */
-  .tag:not(.index):not(.profile) {
-    --tag-hue         : var(--tag-default-hue);
-    --tag-sat         : var(--tag-freeform-sat);
-    --tag-light       : var(--tag-freeform-light);
-    --tag-border-light: var(--tag-default-border-light);
-    display           : inline-block;
-    color             : var(--tag-font-color) !important;
-    background        : hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
-    border            : solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
-    border-radius     : 4px;
-    box-shadow        : 1px 1px 1px rgba(0, 0, 0, 0.1);
-    white-space       : nowrap;
-    max-width         : var(--tag-width);
-    margin            : 2px 0 !important;
-    padding           : 0 4px !important;
-    overflow          : hidden;
-    text-overflow     : ellipsis;
-    vertical-align    : middle;
-  }
+/* Tags: colored rounded rectangles */
+	.tag:not(.index):not(.profile) {
+		--tag-hue: var(--tag-default-hue);
+		--tag-sat: var(--tag-freeform-sat);
+		--tag-light: var(--tag-freeform-light);
+		--tag-border-light: var(--tag-default-border-light);
+		display: inline-block;
+		color: var(--tag-font-color) !important;
+		background: hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
+		border: solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
+		border-radius: 4px;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+		white-space: nowrap;
+		max-width: var(--tag-width);
+		margin: 2px 0 !important;
+		padding: 0 4px !important;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		vertical-align: middle;
+	}
 
-  .tag:not(.index):not(.profile):hover {
-    --tag-light       : var(--tag-highlight-light);
-    --tag-border-light: var(--tag-highlight-border-light);
-    color             : var(--tag-font-color) !important;
-  }
+	.tag:not(.index):not(.profile):hover {
+		--tag-light: var(--tag-highlight-light);
+		--tag-border-light: var(--tag-highlight-border-light);
+		color: var(--tag-font-color) !important;
+	}
 
-  .tags .warnings .tag,
-  .tags.warning .tag {
-    --tag-hue: var(--tag-warning-hue);
-  }
+	.tags .warnings .tag,
+	.tags.warning .tag {
+		--tag-hue: var(--tag-warning-hue);
+	}
 
-  .tags .relationships .tag,
-  .tags.relationship .tag {
-    --tag-hue: var(--tag-relationship-hue);
-  }
+	.tags .relationships .tag,
+	.tags.relationship .tag {
+		--tag-hue: var(--tag-relationship-hue);
+	}
 
-  .tags .characters .tag,
-  .tags.character .tag {
-    --tag-hue: var(--tag-character-hue);
-  }
+	.tags .characters .tag,
+	.tags.character .tag {
+		--tag-hue: var(--tag-character-hue);
+	}
 
-  .tags .characters .tag,
-  .tags .relationships .tag,
-  .tags .warnings .tag,
-  .tags.character .tag,
-  .tags.relationship .tag,
-  .tags.warning .tag {
-    --tag-sat  : var(--tag-default-sat);
-    --tag-light: var(--tag-default-light);
-  }
+	.tags .characters .tag,
+	.tags .relationships .tag,
+	.tags .warnings .tag,
+	.tags.character .tag,
+	.tags.relationship .tag,
+	.tags.warning .tag {
+		--tag-sat: var(--tag-default-sat);
+		--tag-light: var(--tag-default-light);
+	}
 
-  .tags .characters .tag:hover,
-  .tags .relationships .tag:hover,
-  .tags .warnings .tag:hover,
-  .tags.character .tag:hover,
-  .tags.relationship .tag:hover,
-  .tags.warning .tag:hover {
-    --tag-sat: var(--tag-highlight-sat);
-  }
+	.tags .characters .tag:hover,
+	.tags .relationships .tag:hover,
+	.tags .warnings .tag:hover,
+	.tags.character .tag:hover,
+	.tags.relationship .tag:hover,
+	.tags.warning .tag:hover {
+		--tag-sat: var(--tag-highlight-sat);
+	}
 }
