@@ -1,6 +1,6 @@
 # Better AO3 Tags and Fonts
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts.svg) ![GitHub Release Date](https://img.shields.io/github/release-date/nyxmidnight/ao3tagsfonts.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2019) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub Release Date](https://img.shields.io/github/release-date/nyxmidnight/ao3tagsfonts.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2019) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
 **Better AO3 Tags and Fonts** contains various readability and usability improvements for ArchiveOfOurOwn.org. It now also supports the OpenDyslexic font.
 
@@ -96,7 +96,9 @@ I use [Semantic Versioning](http://semver.org/) for versioning.
 
 ## License
 
-This project is licensed under the Unlicense - see the [LICENSE.md](LICENSE.md) file for details
+[![CCO](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [Nyx Midnight](https://github.com/nyxmidnight) has waived all copyright and related or neighboring rights to this work. This work is published from: Canada.
 
 ## Acknowledgements
 
