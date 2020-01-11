@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.2] 2020-01-11
+
+- Fixed spacing issue on the Bookmarks page of a work.
+
 ## [2.0.1] 2019-09-14
 
 - This project is now in the Public Domain (CC0).
