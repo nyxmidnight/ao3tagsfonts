@@ -75,7 +75,7 @@ Use in a user style manager like [Stylus](https://github.com/openstyles/stylus).
 
 -   [x] Convert to UserCSS format for easy installation with the Stylus browser extension.
 -   [x] Add user customizable variables.
--   [ ] Fix spacing issues with icon labels.
+-   [x] Fix spacing issues with icon labels.
 -   [x] Fix overlapping text issues in Series headings. :sparkles:
 
 ## Contributing
