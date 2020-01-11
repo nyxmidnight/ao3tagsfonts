@@ -2,7 +2,7 @@
 @name         Better AO3 Tags and Fonts
 @namespace    https://github.com/nyxmidnight
 @description  Readability and usability improvements for ArchiveOfOurOwn.org
-@version      2.0.1
+@version      2.0.2
 @author       Nyx Midnight (http://nyx.zone)
 @homepageURL  https://github.com/nyxmidnight/ao3tagsfonts
 @supportURL   https://github.com/nyxmidnight/ao3tagsfonts/issues
@@ -259,6 +259,11 @@
 
   .blurb h4.heading a:hover {
     text-decoration: underline;
+  }
+
+/* FIXED: spacing for bookmark icons labels and the "Bookmarked by" text */
+  .bookmark .short .header h5 {
+    margin-left: 120px !important;
   }
 
   .blurb h5.fandoms .tag {
