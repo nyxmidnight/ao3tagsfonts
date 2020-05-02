@@ -4,6 +4,31 @@
 
 **Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org, to improve usability and readability. It now also supports the _OpenDyslexic_ font.
 
+## Screenshots
+
+Screenshots from the _Harry Potter - J. K. Rowling_ fandom page. Click the thumbnails for the full images.
+
+| Without Better AO3 Tags and Fonts                                                                                                    | :sparkles: With Better AO3 Tags and Fonts :sparkles:                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <a href="img/fandompage-nostylesheet-archiveofourown.org.png"><img src="img/th-fandompage-nostylesheet-archiveofourown.org.png"></a> | <a href="img/fandompage-yeswithstylesheet-archiveofourown.org.png"><img src="img/th-fandompage-yeswithstylesheet-archiveofourown.org.png"></a> |
+
+### Features
+
+-   Tags coloured by category
+    -   **Red:** Archive's content warnings
+    -   **Cyan:** Relationships
+    -   **Yellow:** Characters
+    -   **Grey:** Freeform tags
+-   Visible labels for mandatory tag icons
+-   Better default font choices
+    -   **UI:** Segoe UI
+    -   **Text:** Verdana
+-   Custom fonts can be set by the user from a dropdown list (if the user has the font installed on their device)
+-   Better default text width on works
+    -   **Width:** 45 em
+-   Better default text width for documentation, news and FAQ
+    -   **Width:** 65 em
+
 ## Getting Started
 
 ### TL;DR
@@ -13,6 +38,22 @@
 ### Prerequisites
 
 This is a **user stylesheet** that gets applied to a website thanks to a **userstyle manager extension** installed in your browser. You will need a userstyle manager that supports installing UserCSS stylesheets. I personally use **Stylus** (for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), for [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
+
+### Installing
+
+1.  Using a userstyle manager that supports installing UserCSS stylesheets (see **Prerequisites**), open the raw file within the browser by clicking the next link.
+    :package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
+2.  The userstyle manager will open the stylesheet. The sidebar on the left will have an Install Style button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update the stylesheet.
+3.  Press the Install Style button to install the user style in your browser.
+4.  Navigate to [AO3](https://archiveofourown.org).
+5.  Click on the Stylus icon in your toolbar. A list of stylesheets applied at this URL will appear. **Better AO3 Tags and Fonts** will appear with three icons to the right: a gear, a pencil, and three vertical dots.
+6.  Click on the gear :gear:. A modal dialog appears with 4 menus: Site interface font, Work summary font, Story body font, News and docs font.
+7.  Pick a font from each of the dropdown menus (it can be all the same font or a different font for each, all that matters is your reading comfort).
+8.  If auto save is not enabled, click save.
+9.  Optionally, enable auto save.
+10. Enjoy better readability on AO3!
+
+### Custom Fonts
 
 This user stylesheet includes an optional configuration modal with dropdown menus to select the font(s) you wish to use on AO3. The font selected in this menu will **only** work if you have the corresponding font installed on the computer you are currently using. Here is a list of the fonts available in the menu. Some are web-safe option that come pre-installed on different Mac and Windows computers, while some are free fonts. I have provided links to download the free fonts.
 
@@ -30,20 +71,6 @@ This user stylesheet includes an optional configuration modal with dropdown menu
 -   Verdana: Another common web-safe font pre-installed on most Windows and Mac computers. This font is easy to read at low resolutions.
 -   sans-serif: If all else fails, this option uses the default sans-serif font on your machine.
 
-### Installing
-
-1.  Using a userstyle manager that supports installing UserCSS stylesheets (see **Prerequisites**), open the raw file within the browser by clicking the next link.
-    :package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
-2.  The userstyle manager will open the stylesheet. The sidebar on the left will have an Install Style button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update the stylesheet.
-3.  Press the Install Style button to install the user style in your browser.
-4.  Navigate to [AO3](https://archiveofourown.org).
-5.  Click on the Stylus icon in your toolbar. A list of stylesheets applied at this URL will appear. **Better AO3 Tags and Fonts** will appear with three icons to the right: a gear, a pencil, and three vertical dots.
-6.  Click on the gear :gear:. A modal dialog appears with 4 menus: Site interface font, Work summary font, Story body font, News and docs font.
-7.  Pick a font from each of the dropdown menus (it can be all the same font or a different font for each, all that matters is your reading comfort).
-8.  If auto save is not enabled, click save.
-9.  Optionally, enable auto save.
-10. Enjoy better readability on AO3!
-
 ## Technical details
 
 ### Built With
@@ -52,7 +79,7 @@ This user stylesheet includes an optional configuration modal with dropdown menu
 -   [Stylus](https://github.com/openstyles/stylus) - Userstyle manager
 -   [Firefox](https://firefox.com/)'s Web Development Tools
 
-### Features
+### Full Features
 
 -   Tags coloured by category
     -   **Red:** Archive's content warnings (Graphic depiction of violence, Major character death, Rape/non-con, Underage, or None, or Choose Not To Use Archive Warnings)
