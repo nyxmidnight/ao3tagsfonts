@@ -7,20 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.0.2] 2020-01-11
+## [2.0.2] - 2020-05-02
 
-- Fixed spacing issue on the Bookmarks page of a work.
+### Added
 
-## [2.0.1] 2019-09-14
+-   Added the proper public domain license to the project (LICENSE.md) as well as the plain text legal code of the license (LICENSE.txt).
 
-- This project is now in the Public Domain (CC0).
+### Changed
 
-## [2.0.1] 2019-08-21
+-   Rewrote the README for a less technical target audience. I hope it's now easier to read and understand for people who are not computer power users.
+
+## [2.0.2] - 2020-01-11
+
+-   Fixed spacing issue on the Bookmarks page of a work.
+
+## [2.0.1] - 2019-09-14
+
+-   This project is now in the Public Domain (CC0).
+
+## [2.0.1] - 2019-08-21
 
 ### Fixed
-- So many typos...
 
-## [2.0.0] 2019-08-20
+-   So many typos...
+
+## [2.0.0] - 2019-08-20
 
 ### Added
 
@@ -38,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   A contrast/accessibility issue in the footer of works Marked For Later on the front page is now fixed.
 
-## [1.1.0] 2019-02-13
+## [1.1.0] - 2019-02-13
 
 ### Changed
 

@@ -1,46 +1,58 @@
 # Better AO3 Tags and Fonts
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub Release Date](https://img.shields.io/github/release-date/nyxmidnight/ao3tagsfonts.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2019) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2020) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Public domain license](https://img.shields.io/badge/license-CC0-blue) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
-**Better AO3 Tags and Fonts** contains various readability and usability improvements for ArchiveOfOurOwn.org. It now also supports the OpenDyslexic font.
+**Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org, to improve usability and readability. It now also supports the _OpenDyslexic_ font.
 
 ## Getting Started
+
+### TL;DR
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
 
 ### Prerequisites
 
-You will need a userstyle manager that supports installing UserCSS stylesheets. I use **Stylus** ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
+This is a **user stylesheet** that gets applied to a website thanks to a **userstyle manager extension** installed in your browser. You will need a userstyle manager that supports installing UserCSS stylesheets. I personally use **Stylus** (for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), for [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
 
-Furthermore, the font selected in the stylesheet configuration menu will **only** work if you have the corresponding font installed on the computer you are using. Here is a list of the fonts; some are web-safe option that come installed with different Mac and Windows computers, some are free fonts with links where they can be downloaded.
+This user stylesheet includes an optional configuration modal with dropdown menus to select the font(s) you wish to use on AO3. The font selected in this menu will **only** work if you have the corresponding font installed on the computer you are currently using. Here is a list of the fonts available in the menu. Some are web-safe option that come pre-installed on different Mac and Windows computers, while some are free fonts. I have provided links to download the free fonts.
 
--   system-ui: This option uses the default system font installed on a Mac computer or an iOS phone.
--   Segoe UI: A font that comes with Windows and Windows program for Windows 7 to 10 inclusively.
--   Arial: Web-safe option for both Mac and Windows.
--   Helvetica Neue: Common Mac font.
--   [Lato](http://www.latofonts.com/lato-free-fonts/): Open source font.
--   [Noto Sans](https://www.google.com/get/noto/): A personal favourite made by Google for consistency across many different languages, not all of which use the Latin alphabet.
--   [OpenDyslexic](https://opendyslexic.org/): As the website says, "[A] typeface designed against some common symptoms of dyslexia." Hopefully, if you are dyslexic, it will make AO3 easier to read.
--   [Open Sans](https://www.opensans.com/): Commissioned by Google, freely available.
--   Roboto: Default Android font.
--   Trebuchet MS: Included with Windows XP, macOS, iOS and Chrome OS.
--   [Ubuntu](https://design.ubuntu.com/font/): Ubuntu (Linux) font.
--   Verdana: Another common web-safe font, easy to read at low resolutions.
+-   system-ui: This option uses the default system font pre-installed on a Mac computer or an iOS phone.
+-   Segoe UI: A font that comes pre-installed with Windows and Windows program for Windows 7 to 10 inclusively.
+-   Arial: A web-safe option that comes pre-installed on most Mac and Windows computers.
+-   Helvetica Neue: A common pre-installed Mac font.
+-   [Lato](http://www.latofonts.com/lato-free-fonts/): An open source font by Warsaw-based designer Łukasz Dziedzic that can be downloaded and installed for free.
+-   [Noto Sans](https://www.google.com/get/noto/): An open source font made by Google. This family of fonts was created for consistency across many different languages, even those that do not use the Latin alphabet. A personal favourite of mine. Can be downloaded and installed for free.
+-   [OpenDyslexic](https://opendyslexic.org/): As the website says, "[A] typeface designed against some common symptoms of dyslexia." Hopefully, if you are dyslexic, using it will make AO3 easier to read. Can be downloaded and installed for free (donations appreciated).
+-   [Open Sans](https://www.opensans.com/): An open source font commissioned by Google and designed by Steve Matteson, Type Director of Ascender Corp. Can be downloaded and installed for free.
+-   Roboto: A font pre-installed on Android devices.
+-   Trebuchet MS: A font pre-installed on Windows XP, macOS, iOS and Chrome OS.
+-   [Ubuntu](https://design.ubuntu.com/font/): An open source font designed for Ubuntu (Linux).
+-   Verdana: Another common web-safe font pre-installed on most Windows and Mac computers. This font is easy to read at low resolutions.
 -   sans-serif: If all else fails, this option uses the default sans-serif font on your machine.
 
 ### Installing
 
-To install, with a userstyle manager that supports installing UserCSS stylesheets, open the raw file within the browser.
+1.  Using a userstyle manager that supports installing UserCSS stylesheets (see **Prerequisites**), open the raw file within the browser by clicking the next link.
+    :package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
+2.  The userstyle manager will open the stylesheet. The sidebar on the left will have an Install Style button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update the stylesheet.
+3.  Press the Install Style button to install the user style in your browser.
+4.  Navigate to [AO3](https://archiveofourown.org).
+5.  Click on the Stylus icon in your toolbar. A list of stylesheets applied at this URL will appear. **Better AO3 Tags and Fonts** will appear with three icons to the right: a gear, a pencil, and three vertical dots.
+6.  Click on the gear :gear:. A modal dialog appears with 4 menus: Site interface font, Work summary font, Story body font, News and docs font.
+7.  Pick a font from each of the dropdown menus (it can be all the same font or a different font for each, all that matters is your reading comfort).
+8.  If auto save is not enabled, click save.
+9.  Optionally, enable auto save.
+10. Enjoy better readability on AO3!
 
-:package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
+## Technical details
 
-## Built With
+### Built With
 
+-   CSS!
 -   [Stylus](https://github.com/openstyles/stylus) - Userstyle manager
 -   [Firefox](https://firefox.com/)'s Web Development Tools
--   CSS3
 
-## Features
+### Features
 
 -   Tags coloured by category
     -   **Red:** Archive's content warnings (Graphic depiction of violence, Major character death, Rape/non-con, Underage, or None, or Choose Not To Use Archive Warnings)
@@ -50,16 +62,16 @@ To install, with a userstyle manager that supports installing UserCSS stylesheet
 -   Better default font choices
     -   **UI:** Segoe UI
     -   **Text:** Verdana
--   :new: Fonts can now be set by the user from a dropdown list, if the user has the font installed on their computer
+-   Fonts can now be set by the user from a dropdown list, if the user has the font installed on their computer
     -   **Site interface font:** system-ui (mac), "Segoe UI" (default), "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"
     -   **Work summary font, Story body font** and **News & documentation font:** "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana" (default), "sans-serif"
 -   Better default text width on works
     -   **Width:** 45 em
 -   Better default text width for documentation, news and FAQ
     -   **Width:** 65 em
--   Visible labels for mandatory tag icons (Content rating; Relationships, pairings, orientations; Content warnings; Is the work finished or the prompt fulfilled?)
+-   Visible labels for mandatory tag icons (Content rating; Relationships, pairings, orientations; Content warnings; Finished or In progress.)
 
-## Screenshots
+### Screenshots
 
 Screenshots taken with "Noto Sans" font selected in all menus.
 
@@ -67,39 +79,38 @@ Screenshots taken with "Noto Sans" font selected in all menus.
 
 [![Dashboard page](https://i.imgur.com/4CJRHJit.png)](https://i.imgur.com/4CJRHJi.png) [![Work page header](https://i.imgur.com/4sXuwast.png)](https://i.imgur.com/4sXuwas.png) [![Work page body with summary, notes](https://i.imgur.com/PAw07hYt.png)](https://i.imgur.com/PAw07hY.png) [![Work page footer with notes, series, kudos, and comment textarea](https://i.imgur.com/z71f9oJt.png)](https://i.imgur.com/z71f9oJ.png)
 
-## Installation
+### Roadmap
 
-Use in a user style manager like [Stylus](https://github.com/openstyles/stylus).
-
-## Roadmap
-
+-   [ ] Do a page review throughout the archive to detect any place where the stylesheet does not behave as expected.
+-   [ ] Correct the bugs/issues found in the review.
+-   [ ] Investigate the possibility of converting this stylesheet into an AO3 Site Skin.
 -   [x] Convert to UserCSS format for easy installation with the Stylus browser extension.
 -   [x] Add user customizable variables.
 -   [x] Fix spacing issues with icon labels.
--   [x] Fix overlapping text issues in Series headings. :sparkles:
+-   [x] Fix overlapping text issues in Series headings.
 
-## Contributing
+### Versioning
 
-Feel free to use it, modify it, fork it at your leisure.
+I use [Semantic Versioning](http://semver.org/) for versioning. To summarize: each version is numbered according to a (major).(minor).(patch) numbering scheme. If the (patch) number goes up, that's a backward compatible bug fix. If the (minor) patch number goes up, that's a backward compatible new function added. If the (major) number goes up, that's a whole new version that is not backward compatible.
 
-## Support
+### Contributing
 
-Please feel free to open an issue on this repo and I'll look into it.
+Feel free to fork the repo or download the stylesheet and mess with it at your leisure!
 
-## Versioning
+### Support
 
-I use [Semantic Versioning](http://semver.org/) for versioning.
+If anything doesn't work as intended or expected, or to suggest further tweaking, please feel free to open an issue on this repo and I'll gladly look into it.
 
-## Author
+### Author
 
 **Nyx** - [NyxMidnight](https://github.com/nyxmidnight)
 
-## License
+### License
 
 [![CCO](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Nyx Midnight](https://github.com/nyxmidnight) has waived all copyright and related or neighboring rights to this work. This work is published from: Canada.
 
-## Acknowledgements
+### Acknowledgements
 
 Based on the public domain work of [Athari](https://userstyles.org/styles/152660/archiveofourown-org-fonts-tags-ath).
