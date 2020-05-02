@@ -45,15 +45,19 @@ This is a **user stylesheet** that gets applied to a website thanks to a **users
     :package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
 2.  The userstyle manager will open the stylesheet. The sidebar on the left will have an Install Style button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update the stylesheet.
 3.  Press the Install Style button to install the user style in your browser.
-4.  Navigate to [AO3](https://archiveofourown.org).
-5.  Click on the Stylus icon in your toolbar. A list of stylesheets applied at this URL will appear. **Better AO3 Tags and Fonts** will appear with three icons to the right: a gear, a pencil, and three vertical dots.
-6.  Click on the gear :gear:. A modal dialog appears with 4 menus: Site interface font, Work summary font, Story body font, News and docs font.
-7.  Pick a font from each of the dropdown menus (it can be all the same font or a different font for each, all that matters is your reading comfort).
-8.  If auto save is not enabled, click save.
-9.  Optionally, enable auto save.
-10. Enjoy better readability on AO3!
+4.  :tada:
 
-### Custom Fonts
+#### To Set Custom Fonts
+
+1.  Navigate to [AO3](https://archiveofourown.org).
+2.  Click on the Stylus icon in your toolbar. A list of stylesheets applied at this URL will appear. **Better AO3 Tags and Fonts** will appear with three icons to the right: a gear, a pencil, and three vertical dots.
+3.  Click on the gear :gear:. A modal dialog appears with 4 menus: Site interface font, Work summary font, Story body font, News and docs font.
+4.  Pick a font from each of the dropdown menus (it can be all the same font or a different font for each, all that matters is your reading comfort).
+5.  If auto save is not enabled, click save.
+6.  Optionally, enable auto save.
+7.  Enjoy better readability on AO3!
+
+#### On Custom Fonts
 
 This user stylesheet includes an optional configuration modal with dropdown menus to select the font(s) you wish to use on AO3. The font selected in this menu will **only** work if you have the corresponding font installed on the computer you are currently using. Here is a list of the fonts available in the menu. Some are web-safe option that come pre-installed on different Mac and Windows computers, while some are free fonts. I have provided links to download the free fonts.
 
