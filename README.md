@@ -1,6 +1,6 @@
 # Better AO3 Tags and Fonts
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2020) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Public domain license](https://img.shields.io/badge/license-CC0-blue) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2021) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Public domain license](https://img.shields.io/badge/license-CC0-blue) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
 **Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org, to improve usability and readability. It now also supports the _OpenDyslexic_ font.
 
@@ -37,15 +37,15 @@ Screenshots from the _Harry Potter - J. K. Rowling_ fandom page. Click the thumb
 
 ### Prerequisites
 
-This is a **user stylesheet** that gets applied to a website thanks to a **userstyle manager extension** installed in your browser. You will need a userstyle manager that supports installing UserCSS stylesheets. I personally use **Stylus** (for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), for [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
+This is a **user stylesheet** that gets applied to a **website** thanks to a **userstyle manager extension** installed in your browser. You will need a userstyle manager that supports installing UserCSS stylesheets. I personally use **Stylus** (for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), for [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
 
 ### Installing
 
-1.  Using a userstyle manager that supports installing UserCSS stylesheets (see **Prerequisites**), open the raw file within the browser by clicking the next link.
+1.  Using a userstyle manager that supports installing UserCSS stylesheets (see **Prerequisites**), open the raw file within the browser by clicking on the next link.
     :package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
-2.  The userstyle manager will open the stylesheet. The sidebar on the left will have an Install Style button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update the stylesheet.
-3.  Press the Install Style button to install the user style in your browser.
-4.  :tada:
+2.  The userstyle manager will open the stylesheet. The sidebar on the left will have an **Install Style** button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update it.
+3.  Press the **Install Style** button to install the user style in your browser.
+4.  :tada: Enjoy improved readability on AO3!
 
 #### To Set Custom Fonts
 
@@ -80,6 +80,7 @@ This user stylesheet includes an optional configuration modal with dropdown menu
 ### Built With
 
 -   CSS!
+-   UserCSS
 -   [Stylus](https://github.com/openstyles/stylus) - Userstyle manager
 -   [Firefox](https://firefox.com/)'s Web Development Tools
 
@@ -112,8 +113,10 @@ Screenshots taken with "Noto Sans" font selected in all menus.
 
 ### Roadmap
 
--   [ ] Do a page review throughout the archive to detect any place where the stylesheet does not behave as expected.
+-   [ ] Do a page review throughout the archive, both logged in and logged out, to detect any place where the stylesheet does not behave as expected.
 -   [ ] Correct the bugs/issues found in the review.
+-   [ ] Create a wiki for this repository for more in-depth explanation and documentation for less tech-savvy users.
+-   [ ] Take better screenshots to better document the differences between plain AO3 and AO3 with the stylesheet applied, and blur out names.
 -   [ ] Investigate the possibility of converting this stylesheet into an AO3 Site Skin.
 -   [x] Convert to UserCSS format for easy installation with the Stylus browser extension.
 -   [x] Add user customizable variables.
@@ -130,7 +133,7 @@ Feel free to fork the repo or download the stylesheet and mess with it at your l
 
 ### Support
 
-If anything doesn't work as intended or expected, or to suggest further tweaking, please feel free to open an issue on this repo and I'll gladly look into it.
+If anything doesn't work as intended or expected, or to suggest further tweaking, please feel free to open an issue on this repo and I'll gladly look into it. If you don't have/don't want to create a GitHub account, you can [contact me with the form on my blog](https://blog.nyx.zone/contact/).
 
 ### Author
 
