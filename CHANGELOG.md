@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.3] - 2021-07-04
+
+### Fixed
+
+-   Fixed the headers of Prompts type of works on Prompts pages that were all smushed together and unreadable.
+-   Fixed the incorrect licence in the user stylesheet header.
+-   Fixed some typos and wording in the README.
+
 ## [2.0.2] - 2021-03-03
 
 ### Changed

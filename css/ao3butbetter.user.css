@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name         Better AO3 Tags and Fonts
 @namespace    https://github.com/nyxmidnight
-@description  Readability and usability improvements for ArchiveOfOurOwn.org
-@version      2.0.2
-@author       Nyx Midnight (http://nyx.zone)
+@description  A user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org
+@version      2.0.3
+@author       Nyx Midnight (https://nyx.zone)
 @homepageURL  https://github.com/nyxmidnight/ao3tagsfonts
 @supportURL   https://github.com/nyxmidnight/ao3tagsfonts/issues
-@license      Unlicense
+@license      CC0
 @preprocessor default
 
 @var select ui-font "Site interface font" ["system-ui", "Segoe UI*", "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
@@ -61,21 +61,20 @@
     /* Tags */
     --tag-font-color            : var(--ath-override-tag-font-color, #000);
     /* Colours in HSL format */
-    --tag-default-hue: 0;
-		--tag-default-sat: 40%;
-		--tag-default-light: var(--ath-override-tag-default-light, 85%);
-		--tag-default-border-light: var(--ath-override-tag-default-border-light, 70%);
-		--tag-highlight-sat: 50%;
-		--tag-highlight-light: var(--ath-override-tag-highlight-light, 75%);
-		--tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
-		--tag-freeform-sat: 0%;
-		--tag-freeform-light: var(--ath-override-tag-freeform-light, 92%);
-		--tag-warning-hue: 0;
-		--tag-relationship-hue: 180;
-		--tag-character-hue: 60;
+    --tag-default-hue           : 0;
+    --tag-default-sat           : 40%;
+    --tag-default-light         : var(--ath-override-tag-default-light, 85%);
+    --tag-default-border-light  : var(--ath-override-tag-default-border-light, 70%);
+    --tag-highlight-sat         : 50%;
+    --tag-highlight-light       : var(--ath-override-tag-highlight-light, 75%);
+    --tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
+    --tag-freeform-sat          : 0;
+    --tag-freeform-light        : var(--ath-override-tag-freeform-light, 92%);
+    --tag-warning-hue           : 0;
+    --tag-relationship-hue      : 180;
+    --tag-character-hue         : 60;
   }
   /* Fonts */
-
   .dropdown,
   .dynamic form,
   .secondary,
@@ -127,7 +126,6 @@
     color           : #222;
   }
   /* Alphabet: proper columns */
-
   .alphabet .listbox .index {
     columns: calc(var(--tag-width) + 40px);
   }
@@ -139,7 +137,6 @@
     margin : 0 !important;
   }
   /* Work block: border */
-
   .blurb {
     padding      : 5px 10px !important;
     border       : solid 1px var(--box-border-color) !important;
@@ -156,12 +153,10 @@
     display   : inline-block;
   }
   /* Work block: hide accessibility labels */
-
   .blurb .landmark {
     display: none !important;
   }
   /* Work block: expand icons of required tags & bookmark symbols and show descriptions */
-
   .blurb .required-tags {
     display       : flex !important;
     flex-direction: column;
@@ -240,8 +235,9 @@
     font-family: inherit !important;
     color      : var(--gray-text-color);
   }
-
+  /* Move the title and the fandom away from the required tags block for: bookmarks, series, works, prompts */
   .blurb.bookmark .heading,
+  .blurb.group .heading,
   .blurb.series .heading,
   .blurb.work .heading {
     margin-left: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px) !important;
@@ -260,8 +256,7 @@
   .blurb h4.heading a:hover {
     text-decoration: underline;
   }
-
-/* FIXED: spacing for bookmark icons labels and the "Bookmarked by" text */
+  /* FIXED: spacing for bookmark icons labels and the "Bookmarked by" text */
   .bookmark .short .header h5 {
     margin-left: 120px !important;
   }
@@ -358,64 +353,64 @@
   .tags li::after {
     content: unset !important;
   }
-/* Tags: colored rounded rectangles */
-	.tag:not(.index):not(.profile) {
-		--tag-hue: var(--tag-default-hue);
-		--tag-sat: var(--tag-freeform-sat);
-		--tag-light: var(--tag-freeform-light);
-		--tag-border-light: var(--tag-default-border-light);
-		display: inline-block;
-		color: var(--tag-font-color) !important;
-		background: hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
-		border: solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
-		border-radius: 4px;
-		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-		white-space: nowrap;
-		max-width: var(--tag-width);
-		margin: 2px 0 !important;
-		padding: 0 4px !important;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		vertical-align: middle;
-	}
+  /* Tags: colored rounded rectangles */
+  .tag:not(.index):not(.profile) {
+    --tag-hue         : var(--tag-default-hue);
+    --tag-sat         : var(--tag-freeform-sat);
+    --tag-light       : var(--tag-freeform-light);
+    --tag-border-light: var(--tag-default-border-light);
+    display           : inline-block;
+    color             : var(--tag-font-color) !important;
+    background        : hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
+    border            : solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
+    border-radius     : 4px;
+    box-shadow        : 1px 1px 1px rgba(0, 0, 0, 0.1);
+    white-space       : nowrap;
+    max-width         : var(--tag-width);
+    margin            : 2px 0 !important;
+    padding           : 0 4px !important;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    vertical-align    : middle;
+  }
 
-	.tag:not(.index):not(.profile):hover {
-		--tag-light: var(--tag-highlight-light);
-		--tag-border-light: var(--tag-highlight-border-light);
-		color: var(--tag-font-color) !important;
-	}
+  .tag:not(.index):not(.profile):hover {
+    --tag-light       : var(--tag-highlight-light);
+    --tag-border-light: var(--tag-highlight-border-light);
+    color             : var(--tag-font-color) !important;
+  }
 
-	.tags .warnings .tag,
-	.tags.warning .tag {
-		--tag-hue: var(--tag-warning-hue);
-	}
+  .tags .warnings .tag,
+  .tags.warning .tag {
+    --tag-hue: var(--tag-warning-hue);
+  }
 
-	.tags .relationships .tag,
-	.tags.relationship .tag {
-		--tag-hue: var(--tag-relationship-hue);
-	}
+  .tags .relationships .tag,
+  .tags.relationship .tag {
+    --tag-hue: var(--tag-relationship-hue);
+  }
 
-	.tags .characters .tag,
-	.tags.character .tag {
-		--tag-hue: var(--tag-character-hue);
-	}
+  .tags .characters .tag,
+  .tags.character .tag {
+    --tag-hue: var(--tag-character-hue);
+  }
 
-	.tags .characters .tag,
-	.tags .relationships .tag,
-	.tags .warnings .tag,
-	.tags.character .tag,
-	.tags.relationship .tag,
-	.tags.warning .tag {
-		--tag-sat: var(--tag-default-sat);
-		--tag-light: var(--tag-default-light);
-	}
+  .tags .characters .tag,
+  .tags .relationships .tag,
+  .tags .warnings .tag,
+  .tags.character .tag,
+  .tags.relationship .tag,
+  .tags.warning .tag {
+    --tag-sat  : var(--tag-default-sat);
+    --tag-light: var(--tag-default-light);
+  }
 
-	.tags .characters .tag:hover,
-	.tags .relationships .tag:hover,
-	.tags .warnings .tag:hover,
-	.tags.character .tag:hover,
-	.tags.relationship .tag:hover,
-	.tags.warning .tag:hover {
-		--tag-sat: var(--tag-highlight-sat);
-	}
+  .tags .characters .tag:hover,
+  .tags .relationships .tag:hover,
+  .tags .warnings .tag:hover,
+  .tags.character .tag:hover,
+  .tags.relationship .tag:hover,
+  .tags.warning .tag:hover {
+    --tag-sat: var(--tag-highlight-sat);
+  }
 }
