@@ -1,0 +1,137 @@
+/* ==UserStyle==
+@name         Better AO3 Tags and Fonts
+@namespace    https://github.com/nyxmidnight
+@description  A user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org
+@version      3.0.0
+@author       Nyx Midnight (https://nyx.zone)
+@homepageURL  https://github.com/nyxmidnight/ao3tagsfonts
+@supportURL   https://github.com/nyxmidnight/ao3tagsfonts/issues
+@license      CC0-1.0
+@preprocessor default
+
+@var select ui-font "Site interface font" ["system-ui", "Segoe UI*", "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select summary-font "Work summary font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+@var select story-font "Story body font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+@var select article-font "News and docs font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+==/UserStyle== */
+@-moz-document domain("archiveofourown.org") {
+  :root {
+    /* Let's set a few useful variables */
+    /* Colors */
+    /* hsla new syntax (2021): hsla(hue saturation% light% / opacity) */
+    --c-ao3           : hsla(0 100% 30% / 1);
+    --c-white         : hsla(0 0% 100% / 1);
+    --c-grey8         : hsla(0 0% 80% / 1);
+    --c-grey7         : hsla(0 0% 70% / 1);
+    --c-grey2         : hsla(0 0% 20% / 1);
+    --c-black         : hsla(0 0% 10% / 1);
+    /* Font stacks */
+    --sans-serif-ui   : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    --sans-serif      : Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif           : "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    --mono            : "Anonymous Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    --tag-width       : 28em;
+    /* Boxes! */
+    --box-border-color: var(--c-grey7);
+    --box-shadow-color: hsla(0 0% 10% / 0.2);
+  }
+  /* Now let us begin! */
+  html {
+    /* Your browser's default font size */
+    font-size: 100%;
+  }
+
+  .dynamic form,
+  .secondary,
+  .toggled form,
+  body,
+  dropdown {
+    /* apply the "Site interface font" user choice */
+    font-family: var(--ui-font);
+    font-size  : inherit;
+    font-weight: 400;
+    color      : var(--c-black);
+  }
+
+  .userstuff .summary {
+    /* Work summary, apply the "Work summary font" user choice */
+    font-family: var(--summary-font);
+    font-size  : 1em;
+    font-weight: 400;
+  }
+
+  code,
+  kbd,
+  pre,
+  samp,
+  tt,
+  var {
+    /* Better monospace font stack */
+    font-family: var(--mono);
+    font-size  : inherit;
+  }
+
+  .admin,
+  .docs,
+  .news {
+    /* Administrator area, Documentation, FAQ and News section, apply the "News and docs font" user choice */
+    font-family: var(--article-font) !important;
+    font-size  : inherit;
+    font-weight: 400;
+    max-width  : 65em;
+  }
+
+  #workskin {
+    /* Body text of works, apply the "Story body font" user choice */
+    font-size  : 1.2em;
+    font-family: var(--story-font) !important;
+    font-weight: 400;
+    max-width  : 45em;
+  }
+
+  #workskin * {
+    font-family: inherit !important;
+  }
+
+  form p.footnote {
+    line-height: 1.5 !important;
+  }
+  /* FIX: Contrast of Last Viewed footer of Marked For Later works on the index page was too low */
+  .reading h4.viewed {
+    background-color: var(--c-grey7) !important;
+    color           : var(--c-black);
+  }
+  /* Alphabet: proper columns */
+  /* Alphabet is when you browse alphabetically like by fandom */
+  .alphabet .listbox .index {
+    columns: calc(var(--tag-width) + 2.5em);
+  }
+
+  .alphabet .listbox .index li {
+    display: block !important;
+    float  : none !important;
+    width  : auto !important;
+    margin : 0 !important;
+  }
+
+  .alphabet .listbox .index a {
+    font-size: 1.1em;
+  }
+  /* Work block: border */
+  /* Blurb is the card containing a work's title, author, date, warnings, other tags, work summary and stats */
+  .blurb {
+    padding      : 5px 10px !important;
+    border       : solid 1px var(--box-border-color) !important;
+    border-radius: 10px;
+    box-shadow   : 2px 2px 4px 0 var(--box-shadow-color) !important;
+  }
+
+  .blurb blockquote {
+    text-align: left !important;
+  }
+
+  .blurb .notice {
+    box-shadow: none !important;
+    display   : inline-block;
+  }
+}
