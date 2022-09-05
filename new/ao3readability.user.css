@@ -44,7 +44,21 @@
     --required-tag-width: 80px;
     --required-tag-icon-width: 25px;
     --required-tag-font-size: 10px;
-    --required-tag-font-color: var(--ath-override-required-tag-font-color, #000);
+    --required-tag-font-color: var(--c-black);
+    /* Colours in HSL format */
+    --tag-font-color: var(--ath-override-tag-font-color, #000);
+    --tag-default-hue: 0;
+    --tag-default-sat: 40%;
+    --tag-default-light: var(--ath-override-tag-default-light, 85%);
+    --tag-default-border-light: var(--ath-override-tag-default-border-light, 70%);
+    --tag-highlight-sat: 50%;
+    --tag-highlight-light: var(--ath-override-tag-highlight-light, 75%);
+    --tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
+    --tag-freeform-sat: 0;
+    --tag-freeform-light: var(--ath-override-tag-freeform-light, 92%);
+    --tag-warning-hue: 0;
+    --tag-relationship-hue: 180;
+    --tag-character-hue: 60;
     --tag-width: 28em;
     /* Boxes! */
     --box-border-color: var(--c-grey7);
@@ -129,6 +143,19 @@
   #workskin *
   {
     font-family: inherit !important;
+  }
+
+  /*=============================================
+  =            Site Header            =
+  =============================================*/
+
+  /* Align the greeting with the site name because it BOTHERS ME */
+  #greeting
+  {
+    position: relative;
+    display: inline-block;
+    padding: 0.75em;
+    margin-right: -0.5em;
   }
 
   /*=============================================
@@ -266,66 +293,34 @@
     margin-left: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px) !important;
   }
 
-  .blurb h4.heading a
-  {
-    border: none !important;
-  }
-
-  .blurb h4.heading a:first-child
-  {
-    border: none !important;
-    font-size: inherit;
-    padding: 0 10px 0 0;
-  }
-
-  .blurb h4.heading a:hover
-  {
-    text-decoration: underline;
-  }
-
-  /* FIXED: spacing for bookmark icons labels and the "Bookmarked by" text */
-  .bookmark .short .header h5
-  {
-    margin-left: 120px !important;
-  }
-
   .blurb h5.fandoms .tag
   {
     margin: 1px 3px 0 0 !important;
   }
 
-  .blurb .datetime
-  {
-    font-size: inherit !important;
-    font-family: inherit !important;
-  }
+  /*----------  Blurb Footers  ----------*/
 
-  /* Work block: footer */
   .blurb .stats dt
   {
-    font: var(--interface-font-size) var(--ui-font) !important;
-    color: var(--gray-text-color);
+    font-family: var(--ui-font) !important;
+    font-size: inherit;
+    color: var(--c-grey2);
   }
 
   /* Work block: bookmark footer */
   .blurb .user
   {
-    display: flex;
-    flex-wrap: wrap;
     width: auto !important;
-    margin: 0 -10px -5px -10px !important;
-    padding: 5px 0;
-    border: none !important;
-    border-top: solid 1px var(--box-border-color) !important;
-    border-radius: 0 0 10px 10px;
+    border: 1px solid var(--box-border-color) !important;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px 0 var(--box-shadow-color) !important;
   }
 
   .blurb .user *:not(.notes),
   .blurb .user *:not(.notes)::before
   {
     line-height: 1.4 !important;
-    font-size: var(--summary-font-size) !important;
-    font-family: inherit !important;
     vertical-align: top !important;
   }
 
@@ -334,60 +329,111 @@
     margin: 2px 10px !important;
   }
 
-  .blurb .user .datetime
-  {
-    right: 10px !important;
-  }
-
-  .blurb .user blockquote
-  {
-    flex: 100%;
-    margin: 2px 10px !important;
-  }
-
-  .blurb .user .meta.heading
-  {
-    display: none !important;
-  }
-
-  .blurb .user .meta.commas.tags::before
-  {
-    content: "with ";
-    color: var(--gray-text-color);
-    vertical-align: middle !important;
-    margin: 0 0 0 5px !important;
-  }
-
-  .blurb .user .meta.commas:not(.tags)::before
-  {
-    content: "to";
-    color: var(--gray-text-color);
-    margin: 0 0 0 5px !important;
-  }
-
-  .blurb .user .meta.commas:not(.tags)
-  {
-    margin: 2px 5px !important;
-  }
-
-  .blurb .user .actions
-  {
-    flex: 100%;
-    text-align: right;
-    margin: 0 10px 0 0;
-  }
-
+  /*----------  Tags  ----------*/
   /* Tags: no commas */
-  .blurb .tags,
-  .blurb h5.fandoms
+  .tags.commas li::after
   {
-    font-size: 0 !important;
+    content: "";
   }
 
   .blurb .tags *,
   .blurb h5.fandoms *
   {
-    font-size: var(--tag-font-size) !important;
+    font-size: 13px !important;
+  }
+
+  /* Unbold required warnings */
+  .warnings strong
+  {
+    font-weight: 400;
+  }
+
+  /* Remove relationships background */
+  li.relationships a
+  {
+    background: none;
+  }
+
+  /*Keep word breaks within bounds*/
+  .tags li a,
+  h5.fandoms
+  {
+    word-break: break-all;
+  }
+
+  /* Tags: colored rounded rectangles */
+  .tag:not(.index):not(.profile)
+  {
+    --tag-hue: var(--tag-default-hue);
+    --tag-sat: var(--tag-freeform-sat);
+    --tag-light: var(--tag-freeform-light);
+    --tag-border-light: var(--tag-default-border-light);
+    display: inline-block;
+    color: var(--tag-font-color) !important;
+    background: hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
+    border: solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    max-width: var(--tag-width);
+    margin: 2px 0 !important;
+    padding: 0 4px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+  .tag:not(.index):not(.profile):hover
+  {
+    --tag-light: var(--tag-highlight-light);
+    --tag-border-light: var(--tag-highlight-border-light);
+    color: var(--tag-font-color) !important;
+  }
+
+  .tags .warnings .tag,
+  .tags.warning .tag
+  {
+    --tag-hue: var(--tag-warning-hue);
+  }
+
+  .tags .relationships .tag,
+  .tags.relationship .tag
+  {
+    --tag-hue: var(--tag-relationship-hue);
+  }
+
+  .tags .characters .tag,
+  .tags.character .tag
+  {
+    --tag-hue: var(--tag-character-hue);
+  }
+
+  .tags .characters .tag,
+  .tags .relationships .tag,
+  .tags .warnings .tag,
+  .tags.character .tag,
+  .tags.relationship .tag,
+  .tags.warning .tag
+  {
+    --tag-sat: var(--tag-default-sat);
+    --tag-light: var(--tag-default-light);
+  }
+
+  .tags .characters .tag:hover,
+  .tags .relationships .tag:hover,
+  .tags .warnings .tag:hover,
+  .tags.character .tag:hover,
+  .tags.relationship .tag:hover,
+  .tags.warning .tag:hover
+  {
+    --tag-sat: var(--tag-highlight-sat);
+  }
+
+  .tags .freeforms .tag,
+  .tags.freeform .tag,
+  .fandoms .tag
+  {
+    --tag-sat: calc(var(--tag-freeform-sat) * 1%);
   }
 
   /*----------  Fixes  ----------*/
@@ -398,15 +444,6 @@
     background-color: var(--c-grey8) !important;
     color: var(--c-black);
     border-radius: 5px;
-  }
-
-  /* Align the greeting with the site name because it BOTHERS ME */
-  #greeting
-  {
-    position: relative;
-    display: inline-block;
-    padding: 0.75em;
-    margin-right: -0.5em;
   }
 
   form p.footnote
