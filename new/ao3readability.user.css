@@ -156,7 +156,7 @@
     display: inline-block;
   }
 
-  /*----------  Required Warning Symbols  ----------*/
+  /*----------  Required Warnings  ----------*/
 
   .blurb .required-tags
   {
@@ -250,14 +250,18 @@
   {
     font-size: inherit !important;
     font-family: inherit !important;
-    color: var(--c-grey2);
+    color: var(--c-black);
   }
 
   /* Move the title and the fandom away from the required tags block for: bookmarks, series, works, prompts */
-  .blurb.bookmark .heading,
-  .blurb.group .heading,
-  .blurb.series .heading,
-  .blurb.work .heading
+  .blurb.bookmark .header h4,
+  .blurb.bookmark .header h5,
+  .blurb.group .header h4,
+  .blurb.group .header h5,
+  .blurb.series .header h4,
+  .blurb.series .header h5,
+  .blurb.work .header h4,
+  .blurb.work .header h5
   {
     margin-left: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px) !important;
   }
