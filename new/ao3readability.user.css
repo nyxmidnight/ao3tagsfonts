@@ -16,7 +16,6 @@
 ==/UserStyle== */
 @-moz-document domain("archiveofourown.org") {
   :root {
-
     /*=============================================
     =            Variables            =
     =============================================*/
@@ -32,19 +31,7 @@
     --c-grey2: hsla(0 0% 20% / 1);
     --c-black: hsla(0 0% 10% / 1);
 
-    /*----------  Font Stacks  ----------*/
-    --sans-serif-ui: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    --sans-serif: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --serif: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-    --mono: "Anonymous Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-
-    /*----------  Sizes  ----------*/
-    --required-tag-width: 80px;
-    --required-tag-icon-width: 25px;
-    --required-tag-font-size: 10px;
-    --required-tag-font-color: var(--c-black);
-    /* Colours in HSL format */
-    --tag-font-color: var(--ath-override-tag-font-color, #000);
+    /* Tag Colours */
     --tag-default-hue: 0;
     --tag-default-sat: 40%;
     --tag-default-light: var(--ath-override-tag-default-light, 85%);
@@ -57,8 +44,20 @@
     --tag-warning-hue: 0;
     --tag-relationship-hue: 180;
     --tag-character-hue: 60;
+
+    /*----------  Font Stacks  ----------*/
+    --sans-serif-ui: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    --sans-serif: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    --mono: "Anonymous Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+    /*----------  Dimensions  ----------*/
+    --required-tag-width: 80px;
+    --required-tag-icon-width: 25px;
+    --required-tag-font-size: 10px;
     --tag-width: 28em;
-    /* Boxes! */
+
+    /*----------  Box Shadows  ----------*/
     --box-border-color: var(--c-grey7);
     --box-shadow-color: hsla(0 0% 10% / 0.2);
   }
@@ -67,7 +66,6 @@
   =            NOW LET US BEGIN!            =
   =============================================*/
 
-  /*----------  Baseline  ----------*/
   /*----------  Fonts  ----------*/
 
   code,
@@ -124,13 +122,14 @@
     font-size: inherit;
     font-weight: 400;
     max-width: 65em;
+    /* changing this makes the front page fic title and author byline explode */
   }
 
   #workskin {
     /* Body text of works, apply the "Story body font" user choice */
     font-size: 1.2em;
     font-family: var(--story-font) !important;
-    max-width: 45ch;
+    max-width: 50ch;
   }
 
   #workskin * {
@@ -213,7 +212,7 @@
     font-weight: 400 !important;
     font-size: var(--required-tag-font-size) !important;
     line-height: calc(var(--required-tag-font-size) + 2px) !important;
-    color: var(--required-tag-font-color) !important;
+    color: var(--c-black) !important;
     overflow: hidden;
   }
 
@@ -318,7 +317,6 @@
     background: none;
   }
 
-  /*Keep word breaks within bounds*/
   .tags li a,
   h5.fandoms {
     word-break: break-all;
@@ -331,12 +329,13 @@
     --tag-light: var(--tag-freeform-light);
     --tag-border-light: var(--tag-default-border-light);
     display: inline-block;
-    color: var(--tag-font-color) !important;
+    color: var(--c-black) !important;
     background: hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
     border: solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
     border-radius: 4px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
+    /* prevents tags from going multiline */
     max-width: var(--tag-width);
     margin: 2px 0 !important;
     padding: 0 4px !important;
@@ -348,7 +347,7 @@
   .tag:not(.index):not(.profile):hover {
     --tag-light: var(--tag-highlight-light);
     --tag-border-light: var(--tag-highlight-border-light);
-    color: var(--tag-font-color) !important;
+    color: var(--c-black) !important;
   }
 
   .tags .warnings .tag,
@@ -385,14 +384,18 @@
     --tag-sat: var(--tag-highlight-sat);
   }
 
+  /* Add unit to 0 for the freeform saturation */
   .tags .freeforms .tag,
   .tags.freeform .tag,
   .fandoms .tag {
     --tag-sat: calc(var(--tag-freeform-sat) * 1%);
   }
 
-  /*----------  Fixes  ----------*/
-  /* FIX: Contrast of Last Viewed footer of Marked For Later works on the index page was too low */
+  /*=============================================
+=            Bug Fixes            =
+=============================================*/
+
+  /* FIXED: Contrast of Last Viewed footer of Marked For Later works on the index page is too low */
   h4.viewed {
     padding: 5px 10px !important;
     background-color: var(--c-grey8) !important;
@@ -420,4 +423,11 @@
   .alphabet .listbox .index a {
     font-size: 1.1em;
   }
+
+  /* FIX: Add visible focus on links for kbd navigation */
+  /* FIX: Style kbd input on Fandoms index pages */
+  /* FIX: Rating, Category, Fandom name are not coloured on a work's page */
+  /* FIX: Work meta section far too wide */
+  /* FIX: Profile too wide */
+  /* FIX: Tags page */
 }
