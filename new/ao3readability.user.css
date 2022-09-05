@@ -14,10 +14,8 @@
 @var select story-font "Story body font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
 @var select article-font "News and docs font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
 ==/UserStyle== */
-@-moz-document domain("archiveofourown.org")
-{
-  :root
-  {
+@-moz-document domain("archiveofourown.org") {
+  :root {
 
     /*=============================================
     =            Variables            =
@@ -77,8 +75,7 @@
   pre,
   samp,
   tt,
-  var
-  {
+  var {
     /* Better monospace font stack */
     font-family: var(--mono);
     font-size: inherit;
@@ -97,8 +94,7 @@
   .filters input[type=submit],
   .filters .expander,
   select,
-  ul.actions a
-  {
+  ul.actions a {
     /* apply the "Site interface font" user choice */
     font-family: var(--ui-font);
     font-size: inherit;
@@ -113,8 +109,7 @@
   .splash .new .meta,
   .meta dt,
   .meta dd,
-  blockquote.summary
-  {
+  blockquote.summary {
     /* Work summary, apply the "Work summary font" user choice */
     font-family: var(--summary-font);
     font-size: inherit;
@@ -123,8 +118,7 @@
 
   .admin,
   .docs,
-  .news
-  {
+  .news {
     /* Administrator area, Documentation, FAQ and News section, apply the "News and docs font" user choice */
     font-family: var(--article-font) !important;
     font-size: inherit;
@@ -132,16 +126,14 @@
     max-width: 65em;
   }
 
-  #workskin
-  {
+  #workskin {
     /* Body text of works, apply the "Story body font" user choice */
     font-size: 1.2em;
     font-family: var(--story-font) !important;
     max-width: 45ch;
   }
 
-  #workskin *
-  {
+  #workskin * {
     font-family: inherit !important;
   }
 
@@ -150,8 +142,7 @@
   =============================================*/
 
   /* Align the greeting with the site name because it BOTHERS ME */
-  #greeting
-  {
+  #greeting {
     position: relative;
     display: inline-block;
     padding: 0.75em;
@@ -164,29 +155,25 @@
   /* Blurb is the card containing a work's title, author, date, warnings, other tags, work summary and stats */
 
   /*----------  Borders  ----------*/
-  .blurb
-  {
+  .blurb {
     padding: 5px 10px !important;
     border: 1px solid var(--box-border-color) !important;
     border-radius: 10px;
     box-shadow: 2px 2px 4px 0 var(--box-shadow-color) !important;
   }
 
-  .blurb blockquote
-  {
+  .blurb blockquote {
     text-align: left !important;
   }
 
-  .blurb .notice
-  {
+  .blurb .notice {
     box-shadow: none !important;
     display: inline-block;
   }
 
   /*----------  Required Warnings  ----------*/
 
-  .blurb .required-tags
-  {
+  .blurb .required-tags {
     display: flex !important;
     flex-direction: column;
     flex-wrap: wrap;
@@ -195,24 +182,20 @@
 
   .blurb .required-tags li,
   .required-tags .text,
-  .required-tags a
-  {
+  .required-tags a {
     position: static !important;
     width: auto !important;
   }
 
-  .blurb .required-tags li
-  {
+  .blurb .required-tags li {
     width: calc(var(--required-tag-width) + var(--required-tag-icon-width)) !important;
   }
 
-  .blurb .required-tags li a > span
-  {
+  .blurb .required-tags li a > span {
     position: relative !important;
   }
 
-  .blurb .required-tags li a > span .text
-  {
+  .blurb .required-tags li a > span .text {
     position: absolute !important;
     left: 25px;
     top: 0;
@@ -221,8 +204,7 @@
   /*----------  + Bookmarks and Recs Symbols  ----------*/
   .blurb .required-tags li a > span .text,
   .blurb .status a.symbol span .text,
-  .blurb .status::after
-  {
+  .blurb .status::after {
     display: table-cell !important;
     width: var(--required-tag-width) !important;
     padding: 0 3px;
@@ -235,46 +217,38 @@
     overflow: hidden;
   }
 
-  .blurb .status
-  {
+  .blurb .status {
     display: flex !important;
     width: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2) !important;
   }
 
-  .blurb .status a.symbol
-  {
+  .blurb .status a.symbol {
     width: calc(var(--required-tag-width) + var(--required-tag-icon-width)) !important;
   }
 
-  .blurb .status a.symbol span
-  {
+  .blurb .status a.symbol span {
     position: relative;
   }
 
-  .blurb .status a.symbol span .text
-  {
+  .blurb .status a.symbol span .text {
     left: var(--required-tag-icon-width);
   }
 
-  .blurb .status a.symbol span.rec .text::after
-  {
+  .blurb .status a.symbol span.rec .text::after {
     /*Rec*/
     content: "ommended bookmark";
   }
 
-  .blurb .status .count
-  {
+  .blurb .status .count {
     position: static !important;
   }
 
-  .blurb .status::after
-  {
+  .blurb .status::after {
     content: attr(title);
   }
 
   /*----------  Title, byline, fandoms ----------*/
-  .blurb .heading
-  {
+  .blurb .heading {
     font-size: inherit !important;
     font-family: inherit !important;
     color: var(--c-black);
@@ -288,28 +262,24 @@
   .blurb.series .header h4,
   .blurb.series .header h5,
   .blurb.work .header h4,
-  .blurb.work .header h5
-  {
+  .blurb.work .header h5 {
     margin-left: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px) !important;
   }
 
-  .blurb h5.fandoms .tag
-  {
+  .blurb h5.fandoms .tag {
     margin: 1px 3px 0 0 !important;
   }
 
   /*----------  Blurb Footers  ----------*/
 
-  .blurb .stats dt
-  {
+  .blurb .stats dt {
     font-family: var(--ui-font) !important;
     font-size: inherit;
     color: var(--c-grey2);
   }
 
   /* Work block: bookmark footer */
-  .blurb .user
-  {
+  .blurb .user {
     width: auto !important;
     border: 1px solid var(--box-border-color) !important;
     border-radius: 10px;
@@ -318,52 +288,44 @@
   }
 
   .blurb .user *:not(.notes),
-  .blurb .user *:not(.notes)::before
-  {
+  .blurb .user *:not(.notes)::before {
     line-height: 1.4 !important;
     vertical-align: top !important;
   }
 
-  .blurb .user .heading:not(.landmark)
-  {
+  .blurb .user .heading:not(.landmark) {
     margin: 2px 10px !important;
   }
 
   /*----------  Tags  ----------*/
   /* Tags: no commas */
-  .tags.commas li::after
-  {
+  .tags.commas li::after {
     content: "";
   }
 
   .blurb .tags *,
-  .blurb h5.fandoms *
-  {
+  .blurb h5.fandoms * {
     font-size: 13px !important;
   }
 
   /* Unbold required warnings */
-  .warnings strong
-  {
+  .warnings strong {
     font-weight: 400;
   }
 
   /* Remove relationships background */
-  li.relationships a
-  {
+  li.relationships a {
     background: none;
   }
 
   /*Keep word breaks within bounds*/
   .tags li a,
-  h5.fandoms
-  {
+  h5.fandoms {
     word-break: break-all;
   }
 
   /* Tags: colored rounded rectangles */
-  .tag:not(.index):not(.profile)
-  {
+  .tag:not(.index):not(.profile) {
     --tag-hue: var(--tag-default-hue);
     --tag-sat: var(--tag-freeform-sat);
     --tag-light: var(--tag-freeform-light);
@@ -383,28 +345,24 @@
     vertical-align: middle;
   }
 
-  .tag:not(.index):not(.profile):hover
-  {
+  .tag:not(.index):not(.profile):hover {
     --tag-light: var(--tag-highlight-light);
     --tag-border-light: var(--tag-highlight-border-light);
     color: var(--tag-font-color) !important;
   }
 
   .tags .warnings .tag,
-  .tags.warning .tag
-  {
+  .tags.warning .tag {
     --tag-hue: var(--tag-warning-hue);
   }
 
   .tags .relationships .tag,
-  .tags.relationship .tag
-  {
+  .tags.relationship .tag {
     --tag-hue: var(--tag-relationship-hue);
   }
 
   .tags .characters .tag,
-  .tags.character .tag
-  {
+  .tags.character .tag {
     --tag-hue: var(--tag-character-hue);
   }
 
@@ -413,8 +371,7 @@
   .tags .warnings .tag,
   .tags.character .tag,
   .tags.relationship .tag,
-  .tags.warning .tag
-  {
+  .tags.warning .tag {
     --tag-sat: var(--tag-default-sat);
     --tag-light: var(--tag-default-light);
   }
@@ -424,50 +381,43 @@
   .tags .warnings .tag:hover,
   .tags.character .tag:hover,
   .tags.relationship .tag:hover,
-  .tags.warning .tag:hover
-  {
+  .tags.warning .tag:hover {
     --tag-sat: var(--tag-highlight-sat);
   }
 
   .tags .freeforms .tag,
   .tags.freeform .tag,
-  .fandoms .tag
-  {
+  .fandoms .tag {
     --tag-sat: calc(var(--tag-freeform-sat) * 1%);
   }
 
   /*----------  Fixes  ----------*/
   /* FIX: Contrast of Last Viewed footer of Marked For Later works on the index page was too low */
-  h4.viewed
-  {
+  h4.viewed {
     padding: 5px 10px !important;
     background-color: var(--c-grey8) !important;
     color: var(--c-black);
     border-radius: 5px;
   }
 
-  form p.footnote
-  {
+  form p.footnote {
     line-height: 1.5 !important;
   }
 
   /* Alphabet: proper columns */
   /* Alphabet is when you browse alphabetically like by fandom */
-  .alphabet .listbox .index
-  {
+  .alphabet .listbox .index {
     columns: calc(var(--tag-width) + 2.5em);
   }
 
-  .alphabet .listbox .index li
-  {
+  .alphabet .listbox .index li {
     display: block !important;
     float: none !important;
     width: auto !important;
     margin: 0 !important;
   }
 
-  .alphabet .listbox .index a
-  {
+  .alphabet .listbox .index a {
     font-size: 1.1em;
   }
 }
