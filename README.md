@@ -1,6 +1,6 @@
 # Better AO3 Tags and Fonts
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2022) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2023) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
 **Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org to improve usability and readability. It now also supports the _OpenDyslexic_ font.
 
