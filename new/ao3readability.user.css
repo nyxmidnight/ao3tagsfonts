@@ -1,0 +1,433 @@
+/* ==UserStyle==
+@name         Better AO3 Tags and Fonts
+@namespace    https://github.com/nyxmidnight
+@description  A user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org
+@version      3.0.0
+@author       Nyx Midnight (https://nyx.zone)
+@homepageURL  https://github.com/nyxmidnight/ao3tagsfonts
+@supportURL   https://github.com/nyxmidnight/ao3tagsfonts/issues
+@license      CC0-1.0
+@preprocessor default
+
+@var select ui-font "Site interface font" ["system-ui", "Segoe UI*", "Anonymous Pro", "Courier New", "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select summary-font "Work summary font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+@var select story-font "Story body font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+@var select article-font "News and docs font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+==/UserStyle== */
+@-moz-document domain("archiveofourown.org") {
+  :root {
+    /*=============================================
+    =            Variables            =
+    =============================================*/
+
+    /*----------  Colours  ----------*/
+    /* hsla new syntax (2021): hsla(hue saturation% light% / opacity) */
+    --c-ao3: hsla(0 100% 30% / 1);
+    --c-white: hsla(0 0% 100% / 1);
+    --c-offwhite: hsla(0 0 96% / 1);
+    --c-grey9: hsla(0 0 90% / 1);
+    --c-grey8: hsla(0 0% 80% / 1);
+    --c-grey7: hsla(0 0% 70% / 1);
+    --c-grey2: hsla(0 0% 20% / 1);
+    --c-black: hsla(0 0% 10% / 1);
+
+    /* Tag Colours */
+    --tag-default-hue: 0;
+    --tag-default-sat: 40%;
+    --tag-default-light: var(--ath-override-tag-default-light, 85%);
+    --tag-default-border-light: var(--ath-override-tag-default-border-light, 70%);
+    --tag-highlight-sat: 50%;
+    --tag-highlight-light: var(--ath-override-tag-highlight-light, 75%);
+    --tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
+    --tag-freeform-sat: 0;
+    --tag-freeform-light: var(--ath-override-tag-freeform-light, 92%);
+    --tag-warning-hue: 0;
+    --tag-relationship-hue: 180;
+    --tag-character-hue: 60;
+
+    /*----------  Font Stacks  ----------*/
+    --sans-serif-ui: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    --sans-serif: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    --mono: "Anonymous Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+    /*----------  Dimensions  ----------*/
+    --required-tag-width: 80px;
+    --required-tag-icon-width: 25px;
+    --required-tag-font-size: 10px;
+    --tag-width: 28em;
+
+    /*----------  Box Shadows  ----------*/
+    --box-border-color: var(--c-grey7);
+    --box-shadow-color: hsla(0 0% 10% / 0.2);
+  }
+
+  /*=============================================
+  =            NOW LET US BEGIN!            =
+  =============================================*/
+
+  /*----------  Fonts  ----------*/
+
+  code,
+  kbd,
+  pre,
+  samp,
+  tt,
+  var {
+    /* Better monospace font stack */
+    font-family: var(--mono);
+    font-size: inherit;
+  }
+
+  body,
+  textarea,
+  .datetime,
+  input,
+  .toggled form,
+  .dynamic form,
+  .dropdown,
+  button,
+  .filters dt,
+  .filters dd,
+  .filters input[type=submit],
+  .filters .expander,
+  select,
+  ul.actions a {
+    /* apply the "Site interface font" user choice */
+    font-family: var(--ui-font);
+    font-size: inherit;
+    font-weight: 400 !important;
+    color: inherit;
+  }
+
+  li.blurb,
+  .userstuff .summary,
+  .bookmark .user .meta,
+  a.work,
+  .splash .new .meta,
+  .meta dt,
+  .meta dd,
+  blockquote.summary {
+    /* Work summary, apply the "Work summary font" user choice */
+    font-family: var(--summary-font);
+    font-size: inherit;
+    font-weight: 400 !important;
+  }
+
+  .admin,
+  .docs,
+  .news {
+    /* Administrator area, Documentation, FAQ and News section, apply the "News and docs font" user choice */
+    font-family: var(--article-font) !important;
+    font-size: inherit;
+    font-weight: 400;
+    max-width: 65em;
+    /* changing this makes the front page fic title and author byline explode */
+  }
+
+  #workskin {
+    /* Body text of works, apply the "Story body font" user choice */
+    font-size: 1.2em;
+    font-family: var(--story-font) !important;
+    max-width: 50ch;
+  }
+
+  #workskin * {
+    font-family: inherit !important;
+  }
+
+  /*=============================================
+  =            Site Header            =
+  =============================================*/
+
+  /* Align the greeting with the site name because it BOTHERS ME */
+  #greeting {
+    position: relative;
+    display: inline-block;
+    padding: 0.75em;
+    margin-right: -0.5em;
+  }
+
+  /*=============================================
+  =            Blurb            =
+  =============================================*/
+  /* Blurb is the card containing a work's title, author, date, warnings, other tags, work summary and stats */
+
+  /*----------  Borders  ----------*/
+  .blurb {
+    padding: 5px 10px !important;
+    border: 1px solid var(--box-border-color) !important;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 var(--box-shadow-color) !important;
+  }
+
+  .blurb blockquote {
+    text-align: left !important;
+  }
+
+  .blurb .notice {
+    box-shadow: none !important;
+    display: inline-block;
+  }
+
+  /*----------  Required Warnings  ----------*/
+
+  .blurb .required-tags {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+  }
+
+  .blurb .required-tags li,
+  .required-tags .text,
+  .required-tags a {
+    position: static !important;
+    width: auto !important;
+  }
+
+  .blurb .required-tags li {
+    width: calc(var(--required-tag-width) + var(--required-tag-icon-width)) !important;
+  }
+
+  .blurb .required-tags li a > span {
+    position: relative !important;
+  }
+
+  .blurb .required-tags li a > span .text {
+    position: absolute !important;
+    left: 25px;
+    top: 0;
+  }
+
+  /*----------  + Bookmarks and Recs Symbols  ----------*/
+  .blurb .required-tags li a > span .text,
+  .blurb .status a.symbol span .text,
+  .blurb .status::after {
+    display: table-cell !important;
+    width: var(--required-tag-width) !important;
+    padding: 0 3px;
+    vertical-align: middle;
+    font: inherit !important;
+    font-weight: 400 !important;
+    font-size: var(--required-tag-font-size) !important;
+    line-height: calc(var(--required-tag-font-size) + 2px) !important;
+    color: var(--c-black) !important;
+    overflow: hidden;
+  }
+
+  .blurb .status {
+    display: flex !important;
+    width: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2) !important;
+  }
+
+  .blurb .status a.symbol {
+    width: calc(var(--required-tag-width) + var(--required-tag-icon-width)) !important;
+  }
+
+  .blurb .status a.symbol span {
+    position: relative;
+  }
+
+  .blurb .status a.symbol span .text {
+    left: var(--required-tag-icon-width);
+  }
+
+  .blurb .status a.symbol span.rec .text::after {
+    /*Rec*/
+    content: "ommended bookmark";
+  }
+
+  .blurb .status .count {
+    position: static !important;
+  }
+
+  .blurb .status::after {
+    content: attr(title);
+  }
+
+  /*----------  Title, byline, fandoms ----------*/
+  .blurb .heading {
+    font-size: inherit !important;
+    font-family: inherit !important;
+    color: var(--c-black);
+  }
+
+  /* Move the title and the fandom away from the required tags block for: bookmarks, series, works, prompts */
+  .blurb.bookmark .header h4,
+  .blurb.bookmark .header h5,
+  .blurb.group .header h4,
+  .blurb.group .header h5,
+  .blurb.series .header h4,
+  .blurb.series .header h5,
+  .blurb.work .header h4,
+  .blurb.work .header h5 {
+    margin-left: calc((var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px) !important;
+  }
+
+  .blurb h5.fandoms .tag {
+    margin: 1px 3px 0 0 !important;
+  }
+
+  /*----------  Blurb Footers  ----------*/
+
+  .blurb .stats dt {
+    font-family: var(--ui-font) !important;
+    font-size: inherit;
+    color: var(--c-grey2);
+  }
+
+  /* Work block: bookmark footer */
+  .blurb .user {
+    width: auto !important;
+    border: 1px solid var(--box-border-color) !important;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px 0 var(--box-shadow-color) !important;
+  }
+
+  .blurb .user *:not(.notes),
+  .blurb .user *:not(.notes)::before {
+    line-height: 1.4 !important;
+    vertical-align: top !important;
+  }
+
+  .blurb .user .heading:not(.landmark) {
+    margin: 2px 10px !important;
+  }
+
+  /*----------  Tags  ----------*/
+  /* Tags: no commas */
+  .tags.commas li::after {
+    content: "";
+  }
+
+  .blurb .tags *,
+  .blurb h5.fandoms * {
+    font-size: 13px !important;
+  }
+
+  /* Unbold required warnings */
+  .warnings strong {
+    font-weight: 400;
+  }
+
+  /* Remove relationships background */
+  li.relationships a {
+    background: none;
+  }
+
+  .tags li a,
+  h5.fandoms {
+    word-break: break-all;
+  }
+
+  /* Tags: colored rounded rectangles */
+  .tag:not(.index):not(.profile) {
+    --tag-hue: var(--tag-default-hue);
+    --tag-sat: var(--tag-freeform-sat);
+    --tag-light: var(--tag-freeform-light);
+    --tag-border-light: var(--tag-default-border-light);
+    display: inline-block;
+    color: var(--c-black) !important;
+    background: hsl(var(--tag-hue), var(--tag-sat), var(--tag-light)) !important;
+    border: solid 1px hsl(var(--tag-hue), var(--tag-sat), var(--tag-border-light)) !important;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    /* prevents tags from going multiline */
+    max-width: var(--tag-width);
+    margin: 2px 0 !important;
+    padding: 0 4px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+  .tag:not(.index):not(.profile):hover {
+    --tag-light: var(--tag-highlight-light);
+    --tag-border-light: var(--tag-highlight-border-light);
+    color: var(--c-black) !important;
+  }
+
+  .tags .warnings .tag,
+  .tags.warning .tag {
+    --tag-hue: var(--tag-warning-hue);
+  }
+
+  .tags .relationships .tag,
+  .tags.relationship .tag {
+    --tag-hue: var(--tag-relationship-hue);
+  }
+
+  .tags .characters .tag,
+  .tags.character .tag {
+    --tag-hue: var(--tag-character-hue);
+  }
+
+  .tags .characters .tag,
+  .tags .relationships .tag,
+  .tags .warnings .tag,
+  .tags.character .tag,
+  .tags.relationship .tag,
+  .tags.warning .tag {
+    --tag-sat: var(--tag-default-sat);
+    --tag-light: var(--tag-default-light);
+  }
+
+  .tags .characters .tag:hover,
+  .tags .relationships .tag:hover,
+  .tags .warnings .tag:hover,
+  .tags.character .tag:hover,
+  .tags.relationship .tag:hover,
+  .tags.warning .tag:hover {
+    --tag-sat: var(--tag-highlight-sat);
+  }
+
+  /* Add unit to 0 for the freeform saturation */
+  .tags .freeforms .tag,
+  .tags.freeform .tag,
+  .fandoms .tag {
+    --tag-sat: calc(var(--tag-freeform-sat) * 1%);
+  }
+
+  /*=============================================
+=            Bug Fixes            =
+=============================================*/
+
+  /* FIXED: Contrast of Last Viewed footer of Marked For Later works on the index page is too low */
+  h4.viewed {
+    padding: 5px 10px !important;
+    background-color: var(--c-grey8) !important;
+    color: var(--c-black);
+    border-radius: 5px;
+  }
+
+  form p.footnote {
+    line-height: 1.5 !important;
+  }
+
+  /* Alphabet: proper columns */
+  /* Alphabet is when you browse alphabetically like by fandom */
+  .alphabet .listbox .index {
+    columns: calc(var(--tag-width) + 2.5em);
+  }
+
+  .alphabet .listbox .index li {
+    display: block !important;
+    float: none !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  .alphabet .listbox .index a {
+    font-size: 1.1em;
+  }
+
+  /* FIX: Add visible focus on links for kbd navigation */
+  /* FIX: Style kbd input on Fandoms index pages */
+  /* FIX: Rating, Category, Fandom name are not coloured on a work's page */
+  /* FIX: Work meta section far too wide */
+  /* FIX: Profile too wide */
+  /* FIX: Tags page */
+}
