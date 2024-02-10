@@ -1,6 +1,6 @@
 # Better AO3 Tags and Fonts
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2022) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2024) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
 **Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org to improve usability and readability. It now also supports the _OpenDyslexic_ font.
 
@@ -113,15 +113,38 @@ Screenshots taken with "Noto Sans" font selected in all menus.
 
 ### Roadmap
 
-- [ ] Do a page review throughout the archive, both logged in and logged out, to detect any place where the stylesheet does not behave as expected.
-- [ ] Correct the bugs/issues found in the above-mentioned review.
-- [ ] Create a wiki for this repository for more in-depth explanations for less tech-savvy users, complete documentation, and declutter this README.
-- [ ] Take better screenshots to better document the differences between plain AO3 and AO3 with the stylesheet applied, and blur out names.
-- [ ] Investigate the possibility of converting this stylesheet into an AO3 Site Skin.
-- [x] Convert to UserCSS format for easy installation with the Stylus browser extension.
-- [x] Add user customizable variables.
-- [x] Fix spacing issues with icon labels.
-- [x] Fix overlapping text issues in Series headings.
+- Tests
+  - [ ] Front page - Favorites
+  - [ ] Front page - Is it later already?
+  - [ ] Dashboard
+  - [ ] Dashboard - Drafts
+  - [ ] Dashboard - Series
+  - [ ] Dashboard - Bookmarks
+  - [ ] Dashboard - History
+  - [ ] Dashboard - Gifts
+  - [ ] Fandoms pages
+  - [ ] Browse - Works
+  - [ ] Browse - Bookmarks
+  - [ ] Browse - Tags (tag cloud)
+  - [ ] Browse - Collections
+  - [ ] Browse - Challenges
+  - [ ] Browse - Prompt Memes
+  - [ ] About - News
+  - [ ] About - FAQ
+  - [ ] About - Wrangling Guidelines
+- Code
+  - [ ] All the above if necessary
+  - [ ] Remove rounded corners?
+  - [ ] Ensure all colour combinations used respect at least WCAG AA [WhoCanUse](https://www.whocanuse.com/)
+- AO3-specific
+  - [ ] Ensure userstyle works with default dark mode skin, [Reversi](https://archiveofourown.org/skins/929)
+  - [ ] Convert stylesheet into site skin
+- GitHub-specific
+  - [ ] Move in-depth documentation to wiki
+  - [ ] Make separate roadmap file
+  - [ ] Declutter README
+  - [ ] Redo all screenshots
+  - [ ] Remove author names from screenshots
 
 ### Versioning
 
