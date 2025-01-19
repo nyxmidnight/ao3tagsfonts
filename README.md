@@ -1,16 +1,16 @@
 # Better AO3 Tags and Fonts
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2024) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive of our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2025) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive Of Our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
-**Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org to improve usability and readability. It now also supports the _OpenDyslexic_ font.
+**Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on [Archive Of Our Own](https://archiveofourown.org) to improve usability and readability. It now also supports the _OpenDyslexic_ font.
 
 ## Screenshots
 
 Screenshots from the _Harry Potter - J. K. Rowling_ fandom page. Click the thumbnails for the full images.
 
-| Without Better AO3 Tags and Fonts                                                                                                    | :sparkles: With Better AO3 Tags and Fonts :sparkles:                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a href="img/fandompage-nostylesheet-archiveofourown.org.png"><img src="img/th-fandompage-nostylesheet-archiveofourown.org.png"></a> | <a href="img/fandompage-yeswithstylesheet-archiveofourown.org.png"><img src="img/th-fandompage-yeswithstylesheet-archiveofourown.org.png"></a> |
+| Without Better AO3 Tags and Fonts                                                                                                                                                                          | :sparkles: With Better AO3 Tags and Fonts :sparkles:                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![A screenshot of a fandom page on Archive Of Our Own without the user stylesheet applied.](img/th-fandompage-nostylesheet-archiveofourown.org.png)](img/fandompage-nostylesheet-archiveofourown.org.png) | [![A screenshot of a fandom page on Archive Of Our Own with the user stylesheet applied.](img/th-fandompage-yeswithstylesheet-archiveofourown.org.png)](img/fandompage-yeswithstylesheet-archiveofourown.org.png) |
 
 ### Features
 
@@ -42,27 +42,27 @@ This is a **user stylesheet** that gets applied to a **website** thanks to a **u
 ### Installing
 
 1. Using a userstyle manager that supports installing UserCSS stylesheets (see **Prerequisites**), open the raw file within the browser by clicking on the next link.
-    :package: [Install the userCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
+   :package: [Install the UserCSS](https://raw.githubusercontent.com/nyxmidnight/ao3tagsfonts/master/css/ao3butbetter.user.css)
 2. The userstyle manager will open the stylesheet. The sidebar on the left will have an **Install Style** button to install the user style. Below is a checkbox to receive updates. Leave it checked to automatically receive the updated stylesheet whenever I update it.
 3. Click the **Install Style** button to install the user style in your browser.
-4. :tada: Enjoy improved readability on AO3!
+4. :tada: Enjoy improved readability on AO3! :tada:
 
 #### To Set Custom Fonts
 
-1. Navigate to [AO3](https://archiveofourown.org).
+1. Navigate to [Archive Of Our Own](https://archiveofourown.org).
 2. Click on the Stylus icon in your toolbar. A list of stylesheets applied at this URL will appear. **Better AO3 Tags and Fonts** will appear with three icons to the right: a gear, a pencil, and three vertical dots.
 3. Click on the gear :gear:. A modal dialog appears with 4 menus: Site interface font, Work summary font, Story body font, News and docs font.
 4. Pick a font from each of the dropdown menus (it can be all the same font or a different font for each, all that matters is your reading comfort).
 5. If auto save is not enabled, click on the save button.
 6. Optionally, enable auto save.
-7. Enjoy better readability on AO3!
+7. :tada: Enjoy better readability on AO3! :tada:
 
 #### On Custom Fonts
 
 This user stylesheet includes an optional configuration modal with dropdown menus to select the font(s) you wish to use on AO3. The font selected in this menu will **only** work if you have the corresponding font installed on the computer you are currently using. Here is a list of the fonts available in the menu. Some are web-safe option that come pre-installed on different Mac and Windows computers, while some are free fonts. I have provided links to download the free fonts.
 
 - system-ui: This option uses the default system font pre-installed on a Mac computer or an iOS phone.
-- Segoe UI: A font that comes pre-installed with Windows and Windows program for Windows 7 to 10 inclusively.
+- Segoe UI: A font that comes pre-installed with Windows and Windows program for Windows 7 to 11 inclusively.
 - Arial: A web-safe option that comes pre-installed on most Mac and Windows computers.
 - Helvetica Neue: A common pre-installed Mac font.
 - [Lato](http://www.latofonts.com/lato-free-fonts/): An open source font by Warsaw-based designer Łukasz Dziedzic that can be downloaded and installed for free.
@@ -113,38 +113,7 @@ Screenshots taken with "Noto Sans" font selected in all menus.
 
 ### Roadmap
 
-- Tests
-  - [ ] Front page - Favorites
-  - [ ] Front page - Is it later already?
-  - [ ] Dashboard
-  - [ ] Dashboard - Drafts
-  - [ ] Dashboard - Series
-  - [ ] Dashboard - Bookmarks
-  - [ ] Dashboard - History
-  - [ ] Dashboard - Gifts
-  - [ ] Fandoms pages
-  - [ ] Browse - Works
-  - [ ] Browse - Bookmarks
-  - [ ] Browse - Tags (tag cloud)
-  - [ ] Browse - Collections
-  - [ ] Browse - Challenges
-  - [ ] Browse - Prompt Memes
-  - [ ] About - News
-  - [ ] About - FAQ
-  - [ ] About - Wrangling Guidelines
-- Code
-  - [ ] All the above if necessary
-  - [ ] Remove rounded corners?
-  - [ ] Ensure all colour combinations used respect at least WCAG AA [WhoCanUse](https://www.whocanuse.com/)
-- AO3-specific
-  - [ ] Ensure userstyle works with default dark mode skin, [Reversi](https://archiveofourown.org/skins/929)
-  - [ ] Convert stylesheet into site skin
-- GitHub-specific
-  - [ ] Move in-depth documentation to wiki
-  - [ ] Make separate roadmap file
-  - [ ] Declutter README
-  - [ ] Redo all screenshots
-  - [ ] Remove author names from screenshots
+See [ROADMAP.md](ROADMAP.md)
 
 ### Versioning
 
