@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 2025-01-19
+
+### Added
+
+- Added .markdownlint.json configuration file.
+- Added ROADMAP.md file.
+
+### Changed
+
+- Updated .gitignore file to ignore the markdownlint configuration file.
+- Changed the year for the "Maintained" shield.
+
+### Removed
+
+- Removed the Roadmap section from the README.
+
+### Fixed
+
+- Fixed a typo in the CHANGELOG.md.
+
 ## 2022-03-26
 
 - This project is still alive!
@@ -24,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Roadmap updated
-- Updated "Maintained" shield to show I'm still here and the project is still active and being maintened.
+- Updated "Maintained" shield to show I'm still here and the project is still active and being maintained.
 
 ### Fixed
 
@@ -86,7 +106,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added README.
 - Added CHANGELOG.
 
-* * *
+---
 
 #### Guiding Principles
 

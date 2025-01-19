@@ -1,2 +1,5 @@
 # Ignore wiki backup
 wiki/*
+
+# Ignore configuration files
+.markdownlint.json
