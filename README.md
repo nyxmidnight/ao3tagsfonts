@@ -2,11 +2,11 @@
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver) ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2025) ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts) ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts) ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts) ![Archive Of Our Own account](https://img.shields.io/badge/AO3-nyxmidnight-red.svg?logo=archive-of-our-own&logoColor=white&labelColor=990000&color=555555)
 
-**Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on [Archive Of Our Own](https://archiveofourown.org) to improve usability and readability. It now also supports the _OpenDyslexic_ font.
+**Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more and enable better font choices on [Archive Of Our Own](https://archiveofourown.org) to improve usability and readability. It now also supports the *OpenDyslexic* font.
 
 ## Screenshots
 
-Screenshots from the _Harry Potter - J. K. Rowling_ fandom page. Click the thumbnails for the full images.
+Screenshots from the *Harry Potter - J. K. Rowling* fandom page. Click the thumbnails for the full images.
 
 | Without Better AO3 Tags and Fonts                                                                                                                                                                          | :sparkles: With Better AO3 Tags and Fonts :sparkles:                                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
