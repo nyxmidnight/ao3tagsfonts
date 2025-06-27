@@ -1,0 +1,37 @@
+{
+  "name": "ao3tagsfonts",
+  "private": true,
+  "version": "2.0.3",
+  "description": "A userstyle sheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org. ",
+  "keywords": [
+    "userstyle",
+    "user style",
+    "stylesheet",
+    "style sheet",
+    "CSS",
+    "site skin",
+    "AO3",
+    "ArchiveOfOurOwn",
+    "archive of our own",
+    "fanfiction",
+    "fanfic",
+    "fic"
+  ],
+  "author": {
+    "name": "Nyx Midnight",
+    "url": "https://nyx.zone"
+  },
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/nyxmidnight/ao3tagsfonts",
+  "bugs": {
+    "url": "https://github.com/nyxmidnight/ao3tagsfonts/issues"
+  },
+  "main": "cssao3butbetter.user.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxmidnight/ao3tagsfonts"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

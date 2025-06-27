@@ -1,3 +1,6 @@
+# The Usual Suspects
+node_modules/*
+
 # Ignore wiki backup
 wiki/*
 
