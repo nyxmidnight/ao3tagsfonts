@@ -1,8 +1,9 @@
 # The Usual Suspects
 node_modules/*
+.vscode/*
 
 # Ignore wiki backup
 wiki/*
 
 # Ignore configuration files
-.markdownlint.json
+
