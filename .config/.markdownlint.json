@@ -1,0 +1,62 @@
+{
+    "default": true,
+    "MD003": {
+        "style": "atx"
+    },
+    "MD004": {
+        "style": "sublist"
+    },
+    "MD013": {
+        "code_block_line_length": 80,
+        "code_blocks": true,
+        "heading_line_length": 80,
+        "headings": true,
+        "line_length": 120,
+        "strict": false,
+        "tables": false
+    },
+    "MD024": {
+        "siblings_only": true
+    },
+    "MD026": {
+        "punctuation": ".,;:!。，；：！"
+    },
+    "MD029": {
+        "style": "one"
+    },
+    "MD031": {
+        "list_items": true
+    },
+    "MD040": {
+        "allowed_languages": ["html", "css", "scss"]
+    },
+    "MD044": {
+        "code_blocks": true,
+        "html_elements": true,
+        "names": [
+            "GitHub",
+            "github.com",
+            "AO3",
+            "Archive Of Our Own",
+            "archiveofourown.org",
+            "SemVer",
+            "semver.org",
+            "UserCSS"
+        ]
+    },
+    "MD046": {
+        "style": "fenced"
+    },
+    "MD048": {
+        "style": "backtick"
+    },
+    "MD049": {
+        "style": "asterisk"
+    },
+    "MD050": {
+        "style": "asterisk"
+    },
+    "MD055": {
+        "style": "leading_and_trailing"
+    }
+}
