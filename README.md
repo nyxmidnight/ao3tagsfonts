@@ -11,11 +11,11 @@
 **Better AO3 Tags and Fonts** is a user stylesheet to make tags stand out more
 and enable better font choices on
 [Archive Of Our Own](https://archiveofourown.org) to improve usability and
-readability. It now also supports the _OpenDyslexic_ font.
+readability. It now also supports the *OpenDyslexic* font.
 
 ## Screenshots
 
-Screenshots from the _Harry Potter - J. K. Rowling_ fandom page. Click the
+Screenshots from the *Harry Potter - J. K. Rowling* fandom page. Click the
 thumbnails for the full images.
 
 | Without Better AO3 Tags and Fonts                                                                                                                                                                          | :sparkles: With Better AO3 Tags and Fonts :sparkles:                                                                                                                                                              |
@@ -128,7 +128,7 @@ the free fonts.
 ### Built With
 
 - CSS!
-- UserCSS
+- [UserCSS](https://github.com/openstyles/stylus/wiki/Usercss)
 - [Stylus](https://github.com/openstyles/stylus) - Userstyle manager
 - [Firefox](https://firefox.com/)'s Web Development Tools
 
@@ -180,7 +180,7 @@ See [ROADMAP.md](ROADMAP.md)
 
 ### Versioning
 
-I use [Semantic Versioning](http://semver.org/) for versioning. To summarize:
+I use [Semantic Versioning](https://semver.org/) for versioning. To summarize:
 each version is numbered according to a (major).(minor).(patch) numbering
 scheme. If the (patch) number goes up, that's a backward compatible bug fix. If
 the (minor) patch number goes up, that's a backward compatible new function
@@ -205,13 +205,13 @@ into it. If you don't have/don't want to create a GitHub account, you can
 
 ### License
 
-[![CCO](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Nyx Midnight](https://github.com/nyxmidnight)
 has waived all copyright and related or neighboring rights to this work. This
 work is published from: Canada.
 
-### Acknowledgements
+### Acknowledgement
 
 Based on the public domain work of
 [Athari](https://userstyles.org/styles/152660/archiveofourown-org-fonts-tags-ath).
