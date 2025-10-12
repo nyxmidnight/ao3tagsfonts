@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.0] - Unreleased
 
+### Added
+
+-
+
+### Changed
+
+- Update CODE_OF_CONDUCT.md to Contributor Covenant 3.0
+- Update ROADMAP.md
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
 ## 2025-10-12
 
 ### Changed
