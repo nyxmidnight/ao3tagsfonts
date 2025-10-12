@@ -5,7 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [3.0.0] - Unreleased
+
+## 2025-10-12
+
+### Changed
+
+- Put CODE_OF_CONDUCT.md back in the repo root.
+- Put ROADMAP.md back in the repo root.
+- Put LICENSE back in the repo root.
+- Update CHANGELOG.md.
+- Merged and deleted all branches.
 
 ## 2025-01-19
 
