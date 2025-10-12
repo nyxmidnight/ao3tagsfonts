@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name         Better AO3 Tags and Fonts
+@namespace    https://github.com/nyxmidnight
+@description  A user style sheet to make tags stand out more and enable better font choices on ArchiveOfOurOwn.org
+@version      2.0.3
+@author       Nyx Midnight (https://nyx.zone)
+@homepageURL  https://github.com/nyxmidnight/ao3tagsfonts
+@supportURL   https://github.com/nyxmidnight/ao3tagsfonts/issues
+@license      CC0
+@preprocessor default
+
+@var select ui-font "Site interface font" ["system-ui", "Segoe UI*", "Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet", "Ubuntu", "Verdana", "sans-serif"]
+@var select summary-font "Work summary font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+@var select story-font "Story body font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+@var select article-font "News and docs font" ["Arial", "Helvetica Neue", "Lato", "Noto Sans", "OpenDyslexic", "Open Sans", "Roboto", "Trebuchet MS", "Ubuntu", "Verdana*", "sans-serif"]
+==/UserStyle== */
+
+@-moz-document domain("archiveofourown.org") {
+  :root {
+    /* The `color-scheme` CSS property allows an element to indicate which color schemes it can comfortably be rendered in. */
+    color-scheme: light dark;
+
+    /* The light-dark() CSS <color> function enables setting two colors for a property - one light, one dark - without using the `prefers-color-scheme` media query. */
+    --box-border-colour: light-dark(#bbb, #444);
+    --box-shadow-colour: light-dark(rgba(0, 0, 8, 0.2), transparent);
+  }
+}
