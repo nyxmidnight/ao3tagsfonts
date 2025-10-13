@@ -9,14 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+<<<<<<< HEAD
 - Add CONTRIBUTING.md
 - Add SECURITY.md
+=======
+-
+>>>>>>> origin/light-dark-feature
 
 ### Changed
 
 - Update CODE_OF_CONDUCT.md to Contributor Covenant 3.0
 - Update ROADMAP.md
+<<<<<<< HEAD
 - Update README.md
+=======
+>>>>>>> origin/light-dark-feature
 
 ### Deprecated
 
