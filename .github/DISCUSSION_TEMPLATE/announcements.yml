@@ -1,11 +1,4 @@
 body:
-  - type: input
-    id: announcement_title
-    attributes:
-      label: "Announcement Title"
-      description: "Give the announcement a meaningful title."
-    validations:
-      required: true
   - type: textarea
     id: announcement_body
     attributes:
