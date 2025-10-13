@@ -30,6 +30,7 @@ thumbnails for the full images.
     - **Yellow:** Characters tags
     - **Grey:** Freeform tags
 - The 4 mandatory symbols now display text labels in addition to the symbols.
+- The borders around each work are emphasized to visually separate works better.
 - By default, the stylesheet applies the following font changes to the Archive
     - **UI:** Segoe UI
     - **Text:** Verdana
@@ -73,7 +74,7 @@ for [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
 
 ### Configuration
 
-The instructions and details of the configuration options have been moved to the repository's wiki.
+The instructions and details of the configuration options [have been moved to the repository's wiki](https://github.com/nyxmidnight/ao3tagsfonts/wiki).
 
 ## Technical details
 
@@ -111,7 +112,7 @@ into it. If you don't have/don't want to create a GitHub account, you can
 
 ### Author
 
-**Nyx** - [NyxMidnight](https://github.com/nyxmidnight)
+**Nyx** - [Nyx Midnight](https://github.com/nyxmidnight)
 
 ### License
 
