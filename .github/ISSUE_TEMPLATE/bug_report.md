@@ -2,7 +2,7 @@
 name: Bug report
 about: Experiencing a bug? Something not working as expected? Please let me know!
 title: "[BUG]"
-labels: bug
+labels: bug, triage-needed
 assignees: nyxmidnight
 
 ---

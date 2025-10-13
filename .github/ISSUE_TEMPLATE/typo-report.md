@@ -3,7 +3,7 @@ name: Typo report
 about: Found a typo somewhere? Don't know how to fix it yourself? Please tell me about
   it!
 title: "[TYPO]"
-labels: good first issue, meta issue
+labels: documentation, good first issue, meta issue, triage-needed
 assignees: nyxmidnight
 
 ---

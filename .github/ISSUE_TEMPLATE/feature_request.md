@@ -3,7 +3,7 @@ name: Feature request
 about: Do you have a suggestion for something else for the stylesheet to fix? Suggest
   it here!
 title: "[REQUEST]"
-labels: enhancement
+labels: enhancement, triage-needed
 assignees: nyxmidnight
 
 ---
