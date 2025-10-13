@@ -9,12 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
--
+- Add CONTRIBUTING.md
 
 ### Changed
 
 - Update CODE_OF_CONDUCT.md to Contributor Covenant 3.0
 - Update ROADMAP.md
+- Update README.md
 
 ### Deprecated
 
