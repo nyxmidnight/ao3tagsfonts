@@ -6,4 +6,5 @@ node_modules/*
 wiki/*
 
 # Ignore configuration files
-
+.config/
+prepros.config
