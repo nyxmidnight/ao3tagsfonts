@@ -8,3 +8,5 @@ wiki/*
 # Ignore configuration files
 .config/
 prepros.config
+package.json
+*.mjs

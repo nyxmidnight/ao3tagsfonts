@@ -1,9 +1,14 @@
 {
-  "experimentalTernaries": true,
-  "experimentalOperatorPosition": "start",
-  "tabWidth": 4,
-  "quoteProps": "consistent",
-  "bracketSameLine": true,
-  "proseWrap": "never",
-  "singleAttributePerLine": true
+    "experimentalTernaries": true,
+    "experimentalOperatorPosition": "start",
+    "tabWidth": 2,
+    "useTabs": true,
+    "printWidth": 120,
+    "quoteProps": "consistent",
+    "bracketSameLine": true,
+    "proseWrap": "never",
+    "singleAttributePerLine": true,
+    "vueIndentScriptAndStyle": true,
+    "endOfLine": "lf",
+    "semi": true
 }

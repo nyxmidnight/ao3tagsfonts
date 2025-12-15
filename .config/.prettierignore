@@ -1,3 +1,9 @@
-# Ignore markdown files
+# Default entries
+**/.git
+**/.svn
+**/.hg
+**/node_modules
 
-*.md
+# Ignore files by type
+**/*.md
+**/*.json
