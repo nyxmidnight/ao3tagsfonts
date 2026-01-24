@@ -1,9 +1,0 @@
-# Default entries
-**/.git
-**/.svn
-**/.hg
-**/node_modules
-
-# Ignore files by type
-**/*.md
-**/*.json
