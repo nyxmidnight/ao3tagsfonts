@@ -1,27 +1,42 @@
 {
-	"color-function-notation": [
-		"modern",
-		{
-			"ignore": ["with-var-inside"]
-		}
+	"extends": [
+		"stylelint-config-standard"
 	],
-	"color-hex-length": "long",
-	"color-no-invalid-hex": true,
-	"custom-property-empty-line-before": "never",
-	"declaration-block-no-duplicate-properties": [
-		true,
-		{
-			"ignore": ["consecutive-duplicates"]
-		}
+	"plugins": [
+		"stylelint-plugin-logical-css"
 	],
-	"declaration-empty-line-before": "never",
-	"font-family-name-quotes": "always-unless-keyword",
-	"font-weight-notation": "named-where-possible",
-	"no-descending-specificity": [
-		true,
-		{
-			"ignore": ["selectors-within-list"]
-		}
-	],
-	"number-max-precision": 5
+	"rules": {
+		"color-function-notation": [
+			"modern",
+			{
+				"ignore": [
+					"with-var-inside"
+				]
+			}
+		],
+		"color-hex-length": "long",
+		"color-no-invalid-hex": true,
+		"custom-property-empty-line-before": "never",
+		"declaration-block-no-duplicate-properties": [
+			true,
+			{
+				"ignore": [
+					"consecutive-duplicates"
+				]
+			}
+		],
+		"declaration-empty-line-before": "never",
+		"font-family-name-quotes": "always-unless-keyword",
+		"font-weight-notation": "named-where-possible",
+		"no-descending-specificity": [
+			true,
+			{
+				"ignore": [
+					"selectors-within-list"
+				]
+			}
+		],
+		"number-max-precision": 5,
+		"selector-no-vendor-prefix": false
+	}
 }

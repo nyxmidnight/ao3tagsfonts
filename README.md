@@ -2,7 +2,7 @@
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg)
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
 ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts)
 ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts)
@@ -18,8 +18,8 @@
 Screenshots from the *Final Fantasy XIV* fandom page. Click the
 thumbnails for the full images.
 
-| Without Better AO3 Tags and Fonts                                                                                                                                                                          | :sparkles: :rainbow: With Better AO3 Tags and Fonts :rainbow: :sparkles:                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Without Better AO3 Tags and Fonts | :sparkles: :rainbow: With Better AO3 Tags and Fonts :rainbow: :sparkles: |
+| --- | --- |
 | [![A screenshot of a fandom page on Archive Of Our Own without the user stylesheet applied.](img/tb_FF14_nostyle_AO3.png)](img/FF14_nostyle_AO3.png) | [![A screenshot of a fandom page on Archive Of Our Own with the user stylesheet applied.](img/tb_FF14_yesstyle_AO3.png)](img/FF14_yesstyle_AO3.png) |
 
 ### Features
