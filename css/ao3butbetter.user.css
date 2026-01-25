@@ -170,6 +170,7 @@
   }
 
   /* Work block: hide accessibility labels */
+  /* DO NOT TRANSFER, USELESS AND INACCESSIBLE */
   .blurb .landmark {
     display: none !important;
   }
@@ -254,7 +255,7 @@
     content: attr(title);
   }
 
-  /* Work block: header */
+  /* Work block: header the "by" word */
   .blurb .heading {
     font-size: var(--summary-font-size) !important;
     font-family: inherit !important;

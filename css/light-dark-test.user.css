@@ -20,8 +20,306 @@
     /* The `color-scheme` CSS property allows an element to indicate which color schemes it can comfortably be rendered in. */
     color-scheme: light dark;
 
-    /* The light-dark() CSS <color> function enables setting two colors for a property - one light, one dark - without using the `prefers-color-scheme` media query. */
-    --box-border-colour: light-dark(#bbb, #444);
-    --box-shadow-colour: light-dark(rgba(0, 0, 8, 0.2), transparent);
+    /*----------  Colours  ----------*/
+    --l-box-border-color: oklch(0.3867 0 0); /* #444 */
+    --l-box-shadow-color: oklch(0.0608 0.0421 264.05 / 20%);
+    --l-interface-font-color: oklch(0.252 0 0); /* #222 */
+    --l-required-tag-font-color: oklch(0 0 0); /* #000 */
+    --l-tag-font-color: oklch(0 0 0); /* #000 */
+
+    --d-box-border-color: oklch(0.7921 0 0); /* #bbb */
+    --d-box-shadow-color: transparent;
+    --d-interface-font-color: oklch(0.8452 0 0); /* #ccc */
+    --d-required-tag-font-color: oklch(0.8452 0 0); /* #ccc */
+    --d-tag-font-color: oklch(0.9491 0 0); /* #eee */
+
+    --gray-text-color: oklch(0.6268 0 0); /* #888 */
+    /* hsl([h]ue angle, [s]aturation, [l]ighteness); oklch(perceived [l]ightness, [c]hroma, [h]ue angle) */
+    --tag-default-lightness: ;
+
+    --tag-warning-hue: 0;
+    --tag-relationship-hue: 180;
+    --tag-character-hue: 60;
+
+    /*----------  Fonts  ----------*/
+    --normal-font-weight: 400;
+    --bold-font-weight: 700;
+
+    /* Interface: generic body font */
+    --interface-font-size: 1rem;
+
+    /* Summary: Summary and notes on Works pages */
+    --summary-font-size: 1rem;
+    --summary-title-font-size: 1.1rem;
+
+    /* Story: Fanfiction body text */
+    --story-font-size: 1.2rem;
+    --story-width: 60ch; /* 660 characters ~ 33em */
+
+    /* Article: News, Docs/FAQ, Admin Area */
+    --article-font-size: 1rem;
+    --article-width: 60ch;
+
+    /* Required Tags: the 4 squares */
+    --required-tag-font-size: 0.8rem;
+    --required-tag-width: 80px;
+    --required-tag-icon-width: 25px;
+
+    /* Tag: work tags */
+    --tag-font-size: 0.9rem;
+    --tag-width: 50ch;
   }
+
+  /*=============================================
+	=            Basic Page Tweaks            =
+	=============================================*/
+
+  html {
+    font-size: 100%;
+  }
+
+  .dropdown,
+  .dynamic form,
+  .secondary,
+  .toggled form,
+  body {
+    font-family: var(--ui-font) !important;
+    font-size: var(--interface-font-size) !important;
+    font-weight: var(--normal-font-weight);
+    color: light-dark(
+      var(--l-interface-font-color),
+      var(--d-interface-font-color)
+    );
+    line-height: 1.2;
+  }
+
+  blockquote,
+  pre {
+    font-family: var(--summary-font) !important;
+    font-size: var(--summary-font-size) !important;
+    font-weight: var(--normal-font-weight);
+  }
+
+  #main {
+    font-size: inherit !important;
+  }
+
+  .admin,
+  .docs,
+  .news {
+    font-size: var(--article-font-size) !important;
+    font-family: var(--article-font) !important;
+    font-weight: var(--normal-font-weight);
+    max-width: var(--article-width);
+  }
+
+  #workskin {
+    font-size: var(--story-font-size) !important;
+    font-family: var(--story-font) !important;
+    font-weight: var(--normal-font-weight);
+    max-width: var(--story-width);
+  }
+
+  #workskin * {
+    font-family: inherit !important;
+  }
+
+  form p.footnote {
+    line-height: 1.5 !important;
+  }
+
+  /*=============================================
+	=        Fanfic Blurbs on Works Pages        =
+	=============================================*/
+
+  /* First, trace a box */
+  .blurb {
+    padding: 5px 10px !important;
+    border: 1px solid
+      light-dark(var(--l-box-border-color), var(--d-box-border-color)) !important;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0
+      light-dark(var(--l-box-shadow-color), var(--d-box-shadow-color)) !important;
+  }
+
+  /* Align summary text to the left */
+  .blurb blockquote {
+    text-align: left !important;
+  }
+
+  /* ? */
+  .blurb .notice {
+    box-shadow: none !important;
+    display: inline flow-root;
+  }
+
+  /* Required Tags Icons Square: expand image titles of required tags, bookmarks, and rec symbols to show their descriptions */
+  /* Take the Required Tags unordered list and slap the flexbox model on it */
+  /* TODO: Grid instead? */
+  .blurb .required-tags {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+  }
+
+  .blurb .required-tags li,
+  .required-tags .text,
+  .required-tags a {
+    position: static !important;
+    width: auto !important;
+  }
+
+  .blurb .required-tags li {
+    width: calc(
+      var(--required-tag-width) + var(--required-tag-icon-width)
+    ) !important;
+  }
+
+  /* Einstein */
+  .blurb .required-tags li a > span {
+    position: relative !important;
+  }
+
+  .blurb .required-tags li a > span .text {
+    position: absolute !important;
+    left: 25px;
+    top: 0;
+  }
+
+  .blurb .required-tags li a > span .text,
+  .blurb .status a.symbol span .text,
+  .blurb .status::after {
+    display: table-cell !important;
+    width: var(--required-tag-width) !important;
+    padding: 0 3px;
+    vertical-align: middle;
+    font: inherit !important;
+    font-weight: var(--normal-font-weight) !important;
+    font-size: var(--required-tag-font-size) !important;
+    line-height: 1.1 !important;
+    color: light-dark(
+      var(--l-required-tag-font-color),
+      var(--d-required-tag-font-color)
+    ) !important;
+    overflow: hidden;
+  }
+
+  .blurb .status {
+    display: flex !important;
+    width: calc(
+      (var(--required-tag-width) + var(--required-tag-icon-width)) * 2
+    ) !important;
+  }
+
+  .blurb .status a.symbol {
+    width: calc(
+      var(--required-tag-width) + var(--required-tag-icon-width)
+    ) !important;
+  }
+
+  .blurb .status a.symbol span {
+    position: relative;
+  }
+  /* Display the text to the right of the icon */
+  .blurb .status a.symbol span .text {
+    position: absolute;
+    left: var(--required-tag-icon-width);
+  }
+
+  /* Complete the description */
+  .blurb .status a.symbol span.rec .text::after {
+    /*Rec*/
+    content: "ommended bookmark";
+  }
+
+  .blurb .status .count {
+    position: static !important;
+  }
+
+  .blurb .status::after {
+    content: attr(title);
+  }
+
+  /* Byline: the "by" word */
+  .blurb .heading {
+    font-size: var(--summary-font-size) !important;
+    font-family: inherit !important;
+    color: var(--gray-text-color);
+  }
+
+  /* Give the byline text some space to breathe */
+  .blurb h4.heading {
+    line-height: 1.4 !important;
+  }
+
+  /* Same for the list of fandoms */
+  .blurb h5.heading {
+    line-height: 1.2;
+  }
+
+  /* Move the byline and the fandoms list away from the required tags block for: bookmarks, series, works, prompts */
+  .blurb.bookmark .heading,
+  .blurb.group .heading,
+  .blurb.series .heading,
+  .blurb.work .heading {
+    margin-left: calc(
+      (var(--required-tag-width) + var(--required-tag-icon-width)) * 2 + 10px
+    ) !important;
+  }
+
+  /* On pages with status icons (bookmarks), prevent the byline and the fandoms list from overlapping with the status icons and the date */
+  .blurb.bookmark .heading {
+    margin-right: calc(
+      var(--required-tag-width) + var(--required-tag-icon-width)
+    ) !important;
+  }
+
+  /* Take the border off the links in the byline, then put back a better underline */
+  .blurb h4.heading a {
+    border: none !important;
+    text-decoration: underline currentColor solid 3px;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: all;
+  }
+
+  /* Make the title's font slightly bigger */
+  .blurb h4.heading a:first-child {
+    font-size: var(--summary-title-font-size) !important;
+  }
+
+  /* Blurb footer aka Stats! */
+  .blurb .stats {
+    font-family: var(--ui-font) !important;
+    font-size: var(--interface-font-size) !important;
+    font-weight: var(--normal-font-weight);
+  }
+
+  .blurb .stats dt {
+    color: light-dark();
+  }
+
+  .blurb .stats dd a {
+    border: none !important;
+    text-decoration: underline currentColor solid 3px;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: all;
+  }
+
+  /* Bookmark: Your own box inside the blurb*/
+  .blurb.bookmark .own.user {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto !important;
+    margin: 0 -10px -5px -10px !important;
+    padding: 5px 0;
+    border: none !important;
+    border-top: 1px solid
+      light-dark(var(--l-box-border-color), var(--d-box-border-color)) !important;
+    /* border-radius: 0 0 10px 10px; TODO: I don't think this does anything */
+  }
+
+  /*=============================================
+	=            Fun Tags Colours            =
+	=============================================*/
 }

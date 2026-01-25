@@ -25,19 +25,20 @@ thumbnails for the full images.
 ### Features
 
 - Work tags are colour-coded by category for quick parsing
-    - **Red:** Any of the Archive's content warning tags
-    - **Cyan:** Relationships tags
-    - **Yellow:** Characters tags
-    - **Grey:** Freeform tags
+  - **Red:** Any of the Archive's content warning tags
+  - **Cyan:** Relationships tags
+  - **Yellow:** Characters tags
+  - **Grey:** Freeform tags
 - The 4 mandatory symbols now display text labels in addition to the symbols.
+- The borders around each work are emphasized to visually separate works better.
 - By default, the stylesheet applies the following font changes to the Archive
-    - **UI:** Segoe UI
-    - **Text:** Verdana
-    - Custom fonts can be set by the user from a dropdown list (if the user has the font installed on their device)
+  - **UI:** Segoe UI
+  - **Text:** Verdana
+  - Custom fonts can be set by the user from a dropdown list (if the user has the font installed on their device)
 - Work pages have narrower body text for optimal readability
-    - **Width:** 45 em
+  - **Width:** 45 em
 - Documentation, news and FAQ pages have narrower body text for optimal readability
-    - **Width:** 65 em
+  - **Width:** 65 em
 
 ## Quick Usage
 
@@ -73,7 +74,7 @@ for [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)).
 
 ### Configuration
 
-The instructions and details of the configuration options have been moved to the repository's wiki.
+The instructions and details of the configuration options [have been moved to the repository's wiki](https://github.com/nyxmidnight/ao3tagsfonts/wiki).
 
 ## Technical details
 
@@ -111,7 +112,7 @@ into it. If you don't have/don't want to create a GitHub account, you can
 
 ### Author
 
-**Nyx** - [NyxMidnight](https://github.com/nyxmidnight)
+**Nyx** - [Nyx Midnight](https://github.com/nyxmidnight)
 
 ### License
 
