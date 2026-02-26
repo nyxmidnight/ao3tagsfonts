@@ -37,7 +37,7 @@
 		"markdownlint": "^0.40.0",
 		"markdownlint-cli2": "^0.21.0",
 		"markdownlint-cli2-formatter-pretty": "0.0.9",
-		"stylelint": "^17.3.0",
+		"stylelint": "^17.4.0",
 		"stylelint-config-recommended": "^18.0.0",
 		"stylelint-config-standard": "^40.0.0",
 		"stylelint-plugin-logical-css": "^2.0.1"
