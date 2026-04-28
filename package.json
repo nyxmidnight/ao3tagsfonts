@@ -40,7 +40,7 @@
 		"stylelint": "^17.6.0",
 		"stylelint-config-recommended": "^18.0.0",
 		"stylelint-config-standard": "^40.0.0",
-		"stylelint-plugin-logical-css": "^2.0.2"
+		"stylelint-plugin-logical-css": "^2.1.0"
 	},
 	"scripts": {
 		"lint:markdown": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\""
