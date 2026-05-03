@@ -1,0 +1,14 @@
+Dependencies:
+  any:
+    changed-files:
+      any-glob-to-any-file: ['.config/*', 'package.json', 'pnpm-*.yaml', '*.config']
+
+Documentation:
+  any:
+    changed-files:
+      any-glob-to-any-file: ['README.md']
+
+Meta-issue:
+  any:
+    changed-files:
+      any-glob-to-any-file: ['.github/*', '.gitignore', 'CHANGELOG', 'CODE_OF_CONDUCT', 'CONTRIBUTING', 'LICENSE', 'ROADMAP', 'SECURITY']
