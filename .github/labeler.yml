@@ -1,12 +1,19 @@
+# Limit changed-files based labels to 5
+changed-files-labels-limit: 10
+
+# Maximum number of total changed files (must be a non-negative integer). If exceeded, all file-based labeling is skipped.
+max-files-changed: 10
+
+# Label definitions - these are subject to the limit
 Dependencies:
   any:
     changed-files:
-      any-glob-to-any-file: ['.config/*', 'package.json', 'pnpm-*.yaml', '*.config']
+      any-glob-to-any-file: ['.config/*', '.github/*', '**/*.json', '**/*.yml', '*.config']
 
 Documentation:
   any:
     changed-files:
-      any-glob-to-any-file: ['README.md']
+      any-glob-to-any-file: 'README.md'
 
 Meta-issue:
   any:
