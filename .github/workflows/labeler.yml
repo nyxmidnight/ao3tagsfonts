@@ -6,9 +6,10 @@
 # https://github.com/actions/labeler
 
 name: "Pull Request Labeler"
+description: "Automatically label new pull requests based on the paths of files being changed"
 on:
 - pull_request
-
+  
 jobs:
   labeler:
     permissions:
