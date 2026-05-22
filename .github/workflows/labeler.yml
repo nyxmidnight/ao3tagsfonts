@@ -22,5 +22,3 @@ jobs:
     steps:
     - id: label-PR
       uses: actions/labeler@v6.1.0
-      with:
-        node-version: '24'
