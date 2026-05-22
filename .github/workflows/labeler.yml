@@ -20,5 +20,11 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
+    - id: checkout-fix
+      uses: actions/checkout@v6
+      with:
+        repository: 'nyxmidnight/ao3tagsfonts'
+        clean: false
+        ref: ${{ github.event.pull_request.head.sha }}
     - id: label-PR
       uses: actions/labeler@v6.1.0
