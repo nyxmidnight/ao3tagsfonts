@@ -8,12 +8,12 @@ max-files-changed: 10
 Dependencies:
   any:
     changed-files:
-      any-glob-to-any-file: ['.config/*', 'package.json', 'pnpm-*.yaml', '*.config']
+      any-glob-to-any-file: ['.config/*', '.github/*', '**/*.json', '**/*.yml', '*.config']
 
 Documentation:
   any:
     changed-files:
-      any-glob-to-any-file: 'README.*'
+      any-glob-to-any-file: 'README.md'
 
 Meta-issue:
   any:
