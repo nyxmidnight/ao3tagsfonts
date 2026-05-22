@@ -5,18 +5,26 @@
 # file with configuration.  For more information, see:
 # https://github.com/actions/labeler
 
-name: Labeler
-on: [pull_request_target]
-
+name: "Pull Request Labeler"
+description: "Automatically label new pull requests based on the paths of files being changed."
+on:
+- pull_request
+  
 jobs:
-  label:
-
-    runs-on: ubuntu-latest
+  labeler:
     permissions:
       contents: read
+      # Add existing labels
       pull-requests: write
-
+      # Create new labels
+      issues: write
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v4
+    - id: checkout-fix
+      uses: actions/checkout@v6
       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        repository: 'nyxmidnight/ao3tagsfonts'
+        clean: false
+        ref: ${{ github.event.pull_request.head.sha }}
+    - id: label-PR
+      uses: actions/labeler@v6.1.0
