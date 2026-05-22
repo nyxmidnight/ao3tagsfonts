@@ -9,19 +9,16 @@ importers:
   .:
     devDependencies:
       markdownlint-cli2-formatter-pretty:
-        specifier: 0.0.10
+        specifier: ~0.0.10
         version: 0.0.10(markdownlint-cli2@0.22.1)
       stylelint:
-        specifier: ^17.9.1
+        specifier: ~17.9
         version: 17.9.1
-      stylelint-config-recommended:
-        specifier: ^18.0.0
-        version: 18.0.0(stylelint@17.9.1)
       stylelint-config-standard:
-        specifier: ^40.0.0
+        specifier: ~40.0
         version: 40.0.0(stylelint@17.9.1)
       stylelint-plugin-logical-css:
-        specifier: ^2.1.0
+        specifier: ~2.1
         version: 2.1.0(stylelint@17.9.1)
 
 packages:
@@ -247,8 +244,8 @@ packages:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
     engines: {node: '>=8.6.0'}
 
-  fast-uri@3.1.0:
-    resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
+  fast-uri@3.1.1:
+    resolution: {integrity: sha512-h2r7rcm6Ee/J8o0LD5djLuFVcfbZxhvho4vvsbeV0aMvXjUgqv4YpxpkEx0d68l6+IleVfLAdVEfhR7QNMkGHQ==}
 
   fastest-levenshtein@1.0.16:
     resolution: {integrity: sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==}
@@ -788,7 +785,7 @@ snapshots:
   ajv@8.20.0:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 3.1.0
+      fast-uri: 3.1.1
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
@@ -890,7 +887,7 @@ snapshots:
       merge2: 1.4.1
       micromatch: 4.0.8
 
-  fast-uri@3.1.0: {}
+  fast-uri@3.1.1: {}
 
   fastest-levenshtein@1.0.16: {}
 
