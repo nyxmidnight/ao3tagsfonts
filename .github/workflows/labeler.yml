@@ -6,7 +6,7 @@
 # https://github.com/actions/labeler
 
 name: "Pull Request Labeler"
-description: "Automatically label new pull requests based on the paths of files being changed"
+description: "Automatically label new pull requests based on the paths of files being changed."
 on:
 - pull_request
   
@@ -22,3 +22,5 @@ jobs:
     steps:
     - id: label-PR
       uses: actions/labeler@v6.1.0
+      with:
+        node-version: '24'
