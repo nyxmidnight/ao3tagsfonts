@@ -1,3 +1,10 @@
+# Limit changed-files based labels to 5
+changed-files-labels-limit: 5
+
+# Maximum number of total changed files (must be a non-negative integer). If exceeded, all file-based labeling is skipped.
+max-files-changed: 5
+
+# Label definitions - these are subject to the limit
 Dependencies:
   any:
     changed-files:
