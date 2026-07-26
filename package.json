@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "markdownlint-cli2-formatter-pretty": "~0.0.10",
-    "stylelint": "~17.9",
+    "stylelint": "~17.11",
     "stylelint-config-standard": "~40.0",
     "stylelint-plugin-logical-css": "~2.1"
   },
