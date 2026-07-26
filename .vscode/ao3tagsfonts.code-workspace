@@ -5,6 +5,22 @@
 		}
 	],
 	"settings": {
+		"[markdown]": {
+			"editor.unicodeHighlight.ambiguousCharacters": false,
+			"editor.unicodeHighlight.invisibleCharacters": false,
+			"diffEditor.ignoreTrimWhitespace": false,
+			"editor.wordWrap": "on",
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true,
+			"editor.quickSuggestions": {
+				"comments": "off",
+				"strings": "off",
+				"other": "off"
+			},
+			"cSpell.fixSpellingWithRenameProvider": true,
+			"cSpell.advanced.feature.useReferenceProviderWithRename": true,
+			"cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/"
+		},
 		"accessibility.openChatEditedFiles": true,
 		"better-comments.fullHighlight": true,
 		"bookmarks.confirmClear": "commandPalette",
@@ -124,6 +140,10 @@
 		"diffEditor.experimental.showMoves": true,
 		"editor.allowVariableFontsInAccessibilityMode": true,
 		"editor.autoIndentOnPaste": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.markdownlint": "explicit",
+			"source.fixAll.stylelint": "explicit"
+		},
 		"editor.codeLensFontFamily": "'Fira Code'",
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.experimental.asyncTokenization": false,
