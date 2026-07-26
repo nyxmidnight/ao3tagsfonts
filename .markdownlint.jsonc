@@ -1,0 +1,205 @@
+// MarkdownLint configuration file
+{
+	"default": true,
+	"extends": null,
+	"MD001": {
+		"enabled": true
+	},
+	"MD003": {
+		"style": "atx"
+	},
+	"MD004": {
+		"style": "sublist"
+	},
+	"MD005": {
+		"enabled": true
+	},
+	"MD007": {
+		"indent": 2,
+		"start_indent": 2,
+		"start_indented": true
+	},
+	"MD009": {
+		"enabled": true
+	},
+	"MD010": {
+		"enabled": true,
+		"code_blocks": true,
+		"spaces_per_tab": 2
+	},
+	"MD011": {
+		"enabled": true
+	},
+	"MD012": {
+		"enabled": true,
+		"maximum": 2
+	},
+	"MD013": {
+		"enabled": false
+	},
+	"MD014": {
+		"enabled": true
+	},
+	"MD018": {
+		"enabled": true
+	},
+	"MD019": {
+		"enabled": true
+	},
+	"MD020": {
+		"enabled": false
+	},
+	"MD021": {
+		"enabled": false
+	},
+	"MD022": {
+		"enabled": true,
+		"lines_above": 1,
+		"lines_below": 1
+	},
+	"MD023": {
+		"enabled": true
+	},
+	"MD024": {
+		"enabled": true,
+		"siblings_only": true
+	},
+	"MD025": {
+		"enabled": true
+	},
+	"MD026": {
+		"enabled": true,
+		"punctuation": ".,;:。，；："
+	},
+	"MD027": {
+		"enabled": true,
+		"list_items": false
+	},
+	"MD028": {
+		"enabled": true
+	},
+	"MD029": {
+		"enabled": true,
+		"style": "one"
+	},
+	"MD030": {
+		"enabled": true
+	},
+	"MD031": {
+		"enabled": true,
+		"list_items": true
+	},
+	"MD032": {
+		"enabled": true
+	},
+	"MD033": {
+		"enabled": true
+	},
+	"MD034": {
+		"enabled": true
+	},
+	"MD035": {
+		"enabled": true,
+		"style": "consistent"
+	},
+	"MD036": {
+		"enabled": true
+	},
+	"MD037": {
+		"enabled": true
+	},
+	"MD038": {
+		"enabled": true
+	},
+	"MD039": {
+		"enabled": true
+	},
+	"MD040": {
+		"enabled": true
+	},
+	"MD041": {
+		"enabled": true,
+		"allow_preamble": true
+	},
+	"MD042": {
+		"enabled": true
+	},
+	"MD043": {
+		"enabled": false
+	},
+	"MD044": {
+		"enabled": true,
+		"code_blocks": true,
+		"names": [
+			"GitHub",
+			"github.com",
+			"AO3",
+			"Archive Of Our Own",
+			"archiveofourown.org"
+		]
+	},
+	"MD045": {
+		"enabled": true
+	},
+	"MD046": {
+		"enabled": true,
+		"style": "fenced"
+	},
+	"MD047": {
+		"enabled": true
+	},
+	"MD048": {
+		"enabled": true,
+		"style": "backtick"
+	},
+	"MD049": { // italics
+		"enabled": true,
+		"style": "asterisk"
+	},
+	"MD050": { // bold
+		"enabled": true,
+		"style": "asterisk"
+	},
+	"MD051": {
+		"enabled": true
+	},
+	"MD052": {
+		"enabled": true,
+		"ignored_labels": [
+			"x" // ignores GFM checkbox syntax
+		]
+	},
+	"MD053": {
+		"enabled": true,
+		"ignored_definitions": [
+			"//" // ignores comment
+		]
+	},
+	"MD054": {
+		"enabled": true
+	},
+	"MD055": {
+		"enabled": true,
+		"style": "leading_and_trailing"
+	},
+	"MD056": {
+		"enabled": true
+	},
+	"MD058": {
+		"enabled": true
+	},
+	"MD059": {
+		"enabled": true,
+		"prohibited_texts": [
+			"click here",
+			"here",
+			"link",
+			"more"
+		]
+	},
+	"MD060": {
+		"enabled": true,
+		"aligned_delimiter": true,
+		"style": "compact"
+	}
+}

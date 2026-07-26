@@ -32,18 +32,9 @@
     "type": "git",
     "url": "git+https://github.com/nyxmidnight/ao3tagsfonts"
   },
-  "engines": {
-    "node": ">=25",
-    "pnpm": ">=10"
-  },
   "devDependencies": {
-    "markdownlint-cli2-formatter-pretty": "~0.0.10",
-    "stylelint": "~17.11",
-    "stylelint-config-standard": "~40.0",
-    "stylelint-plugin-logical-css": "~2.1"
-  },
-  "scripts": {
-    "lint:markdown": "markdownlint-cli2 \"**/*.{md,mdx}\" \"!node_modules\""
-  },
-  "dependencies": {}
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-plugin-defensive-css": "^2.9.4",
+    "stylelint-plugin-logical-css": "^2.1.0"
+  }
 }
