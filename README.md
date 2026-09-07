@@ -2,7 +2,7 @@
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nyxmidnight/ao3tagsfonts?sort=semver)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nyxmidnight/ao3tagsfonts.svg)
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
 ![GitHub issues](https://img.shields.io/github/issues/nyxmidnight/ao3tagsfonts)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nyxmidnight/ao3tagsfonts)
 ![Licence](https://img.shields.io/github/license/nyxmidnight/ao3tagsfonts)
@@ -10,35 +10,35 @@
 
 **Better AO3 Tags and Fonts** is a user stylesheet for [Archive Of Our Own](https://archiveofourown.org) designed to improve usability and readability throughout the archive. It does so through two main functions:
 
-- It adds colour backgrounds to work tags to make them stand out more;
-- It enables you to change the fonts used on the archive.
+  - It adds colour backgrounds to work tags to make them stand out more;
+  - It enables you to change the fonts used on the archive.
 
 ## Screenshots
 
 Screenshots from the *Final Fantasy XIV* fandom page. Click the
 thumbnails for the full images.
 
-| Without Better AO3 Tags and Fonts                                                                                                                                                                          | :sparkles: :rainbow: With Better AO3 Tags and Fonts :rainbow: :sparkles:                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Without Better AO3 Tags and Fonts | :sparkles: :rainbow: With Better AO3 Tags and Fonts :rainbow: :sparkles: |
+| --- | --- |
 | [![A screenshot of a fandom page on Archive Of Our Own without the user stylesheet applied.](img/tb_FF14_nostyle_AO3.png)](img/FF14_nostyle_AO3.png) | [![A screenshot of a fandom page on Archive Of Our Own with the user stylesheet applied.](img/tb_FF14_yesstyle_AO3.png)](img/FF14_yesstyle_AO3.png) |
 
 ### Features
 
-- Work tags are colour-coded by category for quick parsing
-  - **Red:** Any of the Archive's content warning tags
-  - **Cyan:** Relationships tags
-  - **Yellow:** Characters tags
-  - **Grey:** Freeform tags
-- The 4 mandatory symbols now display text labels in addition to the symbols.
-- The borders around each work are emphasized to visually separate works better.
-- By default, the stylesheet applies the following font changes to the Archive
-  - **UI:** Segoe UI
-  - **Text:** Verdana
-  - Custom fonts can be set by the user from a dropdown list (if the user has the font installed on their device)
-- Work pages have narrower body text for optimal readability
-  - **Width:** 45 em
-- Documentation, news and FAQ pages have narrower body text for optimal readability
-  - **Width:** 65 em
+  - Work tags are colour-coded by category for quick parsing
+    + **Red:** Any of the Archive's content warning tags
+    + **Cyan:** Relationships tags
+    + **Yellow:** Characters tags
+    + **Grey:** Freeform tags
+  - The 4 mandatory symbols now display text labels in addition to the symbols.
+  - The borders around each work are emphasized to visually separate works better.
+  - By default, the stylesheet applies the following font changes to the Archive
+    + **UI:** Segoe UI
+    + **Text:** Verdana
+    + Custom fonts can be set by the user from a dropdown list (if the user has the font installed on their device)
+  - Work pages have narrower body text for optimal readability
+    + **Width:** 45 em
+  - Documentation, news and FAQ pages have narrower body text for optimal readability
+    + **Width:** 65 em
 
 ## Quick Usage
 
@@ -80,10 +80,10 @@ The instructions and details of the configuration options [have been moved to th
 
 ### Built With
 
-- CSS!
-- [UserCSS](https://github.com/openstyles/stylus/wiki/Usercss)
-- [Stylus](https://github.com/openstyles/stylus) - Userstyle manager
-- [Firefox](https://firefox.com/)'s Web Development Tools
+  - CSS!
+  - [UserCSS](https://github.com/openstyles/stylus/wiki/Usercss)
+  - [Stylus](https://github.com/openstyles/stylus) - Userstyle manager
+  - [Firefox](https://firefox.com/)'s Web Development Tools
 
 ### Roadmap
 
