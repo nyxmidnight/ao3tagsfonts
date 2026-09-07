@@ -1,0 +1,9 @@
+minimumReleaseAge: 1440
+nodeVersion: '26.8.1'
+savePrefix: '~'
+supportedArchitectures:
+  os:
+    - win32
+  cpu:
+    - x64
+trustPolicy: no-downgrade
