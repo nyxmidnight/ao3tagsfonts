@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"chat.agent.enabled": false,
+		"chat.agent.maxRequests": 1,
+		"workbench.colorTheme": "Catppuccin Macchiato",
+		"editor.tabSize": 2,
+		"editor.formatOnPaste": true,
+		"npm.packageManager": "pnpm",
+		"stylelint.packageManager": "pnpm",
+		"chat.tools.terminal.autoApproveWorkspaceNpmScripts": false,
+		"chat.disableAIFeatures": true
+	}
+}

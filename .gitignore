@@ -1,6 +1,8 @@
 # Git Ignore File
 # 2026-07-26
 
+package.json
+
 # Ignore wiki backup
 wiki/*
 

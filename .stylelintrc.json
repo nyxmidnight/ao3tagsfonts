@@ -1,8 +1,5 @@
 {
-  "plugins": [
-    "stylelint-plugin-logical-css",
-    "stylelint-plugin-defensive-css"
-  ],
+  "plugins": ["stylelint-plugin-logical-css", "stylelint-plugin-defensive-css"],
   "extends": [
     "stylelint-config-standard",
     "stylelint-plugin-logical-css/configs/recommended",
