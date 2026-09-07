@@ -16,40 +16,58 @@
 ==/UserStyle== */
 @-moz-document domain("archiveofourown.org") {
   :root {
+    /* The `color-scheme` CSS property allows an element to indicate which color schemes it can comfortably be rendered in. */
+    color-scheme: light dark;
+
     /*=============================================
-    =            Variables            =
+    =                  Variables                  =
     =============================================*/
 
     /*----------  Colours  ----------*/
-    /* hsla new syntax (2021): hsla(hue saturation% light% / opacity) */
-    --c-ao3: hsla(0 100% 30% / 1);
-    --c-white: hsla(0 0% 100% / 1);
-    --c-offwhite: hsla(0 0 96% / 1);
-    --c-grey9: hsla(0 0 90% / 1);
-    --c-grey8: hsla(0 0% 80% / 1);
-    --c-grey7: hsla(0 0% 70% / 1);
-    --c-grey2: hsla(0 0% 20% / 1);
-    --c-black: hsla(0 0% 10% / 1);
+    /* oklch syntax (2026): oklch([perceived] lightness chroma hue / alpha) */
+    --c-ao3: oklch(0.4289 0.176 29.23); /* #990000 */
+    --c-white: oklch(1 0 0); /* #ffffff */
+    --c-offwhite: oklch(0.96 0 0); /* #f2f2f2 */
+    --c-grey9: oklch(0.9 0 0); /* #dedede */
+    --c-grey8: oklch(0.8 0 0); /* #bebebe */
+    --c-grey7: oklch(0.7 0 0); /* #9e9e9e */
+    --c-grey2: oklch(0.2 0 0); /* #161616 */
+    --c-black: oklch(0.1 0 0); /* #030303 */
+    /* tags default */
+    --c-l-tagwarn: oklch(0.8621 0.0351 17.85); /* #e8c9c9 */
+    --c-l-borderwarn: oklch(0.7259 0.074 19.02); /* #d19494 */
+    --c-l-tagship: oklch(0.9086 0.0325 196.59); /* #c9e8e8 */
+    --c-l-bordership: oklch(0.8194 0.0622 196); /* #94d1d1 */
+    --c-l-tagchara: oklch(0.9229 0.0409 107.18); /* #e8e8c9 */
+    --c-l-borderchara: oklch(0.8461 0.0797 107.99); /* #d1d194 */
+    --c-l-tagfree: oklch(0.9401 0 0); /* #ebebeb */
+    --c-l-borderfree: oklch(0.7668 0 0); /* #b3b3b3 */
 
-    /* Tag Colours */
-    --tag-default-hue: 0;
-    --tag-default-sat: 40%;
-    --tag-default-light: var(--ath-override-tag-default-light, 85%);
-    --tag-default-border-light: var(--ath-override-tag-default-border-light, 70%);
-    --tag-highlight-sat: 50%;
-    --tag-highlight-light: var(--ath-override-tag-highlight-light, 75%);
-    --tag-highlight-border-light: var(--ath-override-tag-highlight-border-light, 60%);
-    --tag-freeform-sat: 0;
-    --tag-freeform-light: var(--ath-override-tag-freeform-light, 92%);
-    --tag-warning-hue: 0;
-    --tag-relationship-hue: 180;
-    --tag-character-hue: 60;
+    /* tags hover */
+    --c-l-h-tagwarn: oklch(0.7638 0.0766 18.99); /* #df9f9f */
+    --c-l-h-borderwarn: oklch(0.6308 0.1298 21.44); /* #cc6666 */
+    --c-l-h-tagship: oklch(0.8608 0.0645 196.02); /* #9fdfdf */
+    --c-l-h-bordership: oklch(0.7845 0.0952 195.39); /* #66cccc */
+    --c-l-h-tagchara: oklch(0.8885 0.0827 107.97); /* #dfdf9f */
+    --c-l-h-borderchara: oklch(0.8242 0.1253 108.86); /* #cccc66 */
+    --c-l-h-tagfree: oklch(0.8047 0 0); /* #bfbfbf */
+    --c-l-h-borderfree: oklch(0.683 0 0); /* #999999 */
 
     /*----------  Font Stacks  ----------*/
-    --sans-serif-ui: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    --sans-serif: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --serif: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-    --mono: "Anonymous Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    --sans-serif-ui:
+      "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana,
+      "Verdana Ref", sans-serif;
+    --sans-serif:
+      Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
+      "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    --serif:
+      "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
+      "Liberation Serif", Georgia, serif;
+    --mono:
+      "Anonymous Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+      "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New",
+      Courier, monospace;
 
     /*----------  Dimensions  ----------*/
     --required-tag-width: 80px;
@@ -65,6 +83,9 @@
   /*=============================================
   =            NOW LET US BEGIN!            =
   =============================================*/
+  html {
+    font-size: 100%;
+  }
 
   /*----------  Fonts  ----------*/
 
@@ -89,7 +110,7 @@
   button,
   .filters dt,
   .filters dd,
-  .filters input[type=submit],
+  .filters input[type="submit"],
   .filters .expander,
   select,
   ul.actions a {
@@ -137,7 +158,7 @@
   }
 
   /*=============================================
-  =            Site Header            =
+  =                 Site Header                 =
   =============================================*/
 
   /* Align the greeting with the site name because it BOTHERS ME */
@@ -149,7 +170,7 @@
   }
 
   /*=============================================
-  =            Blurb            =
+  =                    Blurb                    =
   =============================================*/
   /* Blurb is the card containing a work's title, author, date, warnings, other tags, work summary and stats */
 
@@ -170,7 +191,7 @@
     display: inline-block;
   }
 
-  /*----------  Required Warnings  ----------*/
+  /*----------  Required Warnings Icons  ----------*/
 
   .blurb .required-tags {
     display: flex !important;
@@ -198,6 +219,7 @@
     position: absolute !important;
     left: 25px;
     top: 0;
+    color: light-dark(var(--c-black), var(--c-white));
   }
 
   /*----------  + Bookmarks and Recs Symbols  ----------*/
