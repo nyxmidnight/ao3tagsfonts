@@ -33,7 +33,7 @@
     "url": "git+https://github.com/nyxmidnight/ao3tagsfonts"
   },
   "devDependencies": {
-    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-standard": "^41.0.0",
     "stylelint-plugin-defensive-css": "^2.9.4",
     "stylelint-plugin-logical-css": "^2.1.0"
   }
