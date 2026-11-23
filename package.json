@@ -35,6 +35,6 @@
   "devDependencies": {
     "stylelint-config-standard": "^40.0.0",
     "stylelint-plugin-defensive-css": "^2.9.4",
-    "stylelint-plugin-logical-css": "^2.1.0"
+    "stylelint-plugin-logical-css": "^2.1.1"
   }
 }
